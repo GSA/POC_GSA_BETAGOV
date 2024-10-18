@@ -1,0 +1,24 @@
+uuid: 520d99d7-2250-48cb-bd44-f41ada93dc84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.uswds_summary_box
+  module:
+    - text
+_core:
+  default_config_hash: 6WHiE9Vaqg84vQJqhkzKgOHOgEDgCD7Oo2oiwmXz8p8
+id: paragraph.uswds_summary_box.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: uswds_summary_box
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

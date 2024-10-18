@@ -1,0 +1,20 @@
+uuid: 9389385e-9c3a-42c9-ac5e-9b250ef51d05
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: RpRdnAYswy89ZXuj_8sTOBtxVzCaFCprXAv48Iyax2o
+id: paragraph.field_slim
+field_name: field_slim
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: e5867db5-831c-4110-a2b8-4f0415b8375c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_indent_media
+    - paragraphs.paragraphs_type.uswds_card_regular
+_core:
+  default_config_hash: 4Lxrv8MELcC6uy731trvkFYU5KR0XIgKyZw-npoBfCI
+id: paragraph.uswds_card_regular.field_indent_media
+field_name: field_indent_media
+entity_type: paragraph
+bundle: uswds_card_regular
+label: 'Indent Media'
+description: 'Indents the media element so it does not extend to the edge of the card.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

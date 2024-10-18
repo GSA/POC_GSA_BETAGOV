@@ -1,0 +1,20 @@
+uuid: a5980f97-5902-4ef4-8f6e-2e425d009570
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: nXO-6_sG3dcw3RwDT9nF5PumsMetSDduYkF1_bIDBLU
+id: paragraph.field_make_card_link
+field_name: field_make_card_link
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

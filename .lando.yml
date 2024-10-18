@@ -1,0 +1,4 @@
+name: beta-gov-app
+recipe: drupal10
+config:
+  webroot: web

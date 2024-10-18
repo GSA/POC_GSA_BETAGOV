@@ -1,0 +1,113 @@
+uuid: 91ddeb81-25bc-4d70-a8f7-4b1ab718d37d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.uswds_2_columns
+    - paragraphs.paragraphs_type.uswds_3_columns
+    - paragraphs.paragraphs_type.uswds_accordion
+    - paragraphs.paragraphs_type.uswds_accordion_section
+    - paragraphs.paragraphs_type.uswds_alert
+    - paragraphs.paragraphs_type.uswds_card_group_flag
+    - paragraphs.paragraphs_type.uswds_card_group_regular
+    - paragraphs.paragraphs_type.uswds_card_regular
+    - paragraphs.paragraphs_type.uswds_cards_flag
+    - paragraphs.paragraphs_type.uswds_modal
+    - paragraphs.paragraphs_type.uswds_process_item
+    - paragraphs.paragraphs_type.uswds_process_list
+    - paragraphs.paragraphs_type.uswds_step_indicator_item
+    - paragraphs.paragraphs_type.uswds_step_indicator_list
+    - paragraphs.paragraphs_type.uswds_summary_box
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: landing_page
+label: 'USWDS Paragraphs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      uswds_2_columns: uswds_2_columns
+      uswds_3_columns: uswds_3_columns
+      uswds_accordion: uswds_accordion
+      uswds_accordion_section: uswds_accordion_section
+      uswds_alert: uswds_alert
+      uswds_card_group_flag: uswds_card_group_flag
+      uswds_card_group_regular: uswds_card_group_regular
+      uswds_card_regular: uswds_card_regular
+      uswds_cards_flag: uswds_cards_flag
+      uswds_modal: uswds_modal
+      uswds_process_item: uswds_process_item
+      uswds_process_list: uswds_process_list
+      uswds_step_indicator_item: uswds_step_indicator_item
+      uswds_step_indicator_list: uswds_step_indicator_list
+      uswds_summary_box: uswds_summary_box
+    negate: 0
+    target_bundles_drag_drop:
+      text_field:
+        weight: 20
+        enabled: false
+      uswds_2_column_breakpoints:
+        weight: 21
+        enabled: false
+      uswds_2_columns:
+        weight: 22
+        enabled: true
+      uswds_3_column_breakpoints:
+        weight: 23
+        enabled: false
+      uswds_3_columns:
+        weight: 24
+        enabled: true
+      uswds_accordion:
+        weight: 25
+        enabled: true
+      uswds_accordion_section:
+        weight: 26
+        enabled: true
+      uswds_alert:
+        weight: 27
+        enabled: true
+      uswds_card_breakpoints:
+        weight: 28
+        enabled: false
+      uswds_card_group_flag:
+        weight: 29
+        enabled: true
+      uswds_card_group_regular:
+        weight: 30
+        enabled: true
+      uswds_card_regular:
+        weight: 31
+        enabled: true
+      uswds_cards_flag:
+        weight: 32
+        enabled: true
+      uswds_modal:
+        weight: 33
+        enabled: true
+      uswds_process_item:
+        weight: 34
+        enabled: true
+      uswds_process_list:
+        weight: 35
+        enabled: true
+      uswds_step_indicator_item:
+        weight: 36
+        enabled: true
+      uswds_step_indicator_list:
+        weight: 37
+        enabled: true
+      uswds_summary_box:
+        weight: 38
+        enabled: true
+field_type: entity_reference_revisions

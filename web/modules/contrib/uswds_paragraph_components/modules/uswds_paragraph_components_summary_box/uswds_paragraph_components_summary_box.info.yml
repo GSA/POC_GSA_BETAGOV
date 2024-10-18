@@ -1,0 +1,13 @@
+name: USWDS Paragraph Components Summary Box
+type: module
+description: Summary Box using USWDS markup
+core_version_requirement: ^9 || ^10
+package: Paragraphs
+dependencies:
+  - paragraphs:paragraphs
+  - uswds_paragraph_components:uswds_paragraph_components
+
+# Information added by Drupal.org packaging script on 2024-03-06
+version: '3.1.0'
+project: 'uswds_paragraph_components'
+datestamp: 1709759836
