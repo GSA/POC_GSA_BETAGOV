@@ -1,3 +1,8 @@
 web/sites/default/
 web/sites/default/files/*
 /web/sites/default/files/*
+/web/sites/*/files
+/web/sites/*/files/*
+*.sql
+*.sql.gz
+*.sql.tgz
