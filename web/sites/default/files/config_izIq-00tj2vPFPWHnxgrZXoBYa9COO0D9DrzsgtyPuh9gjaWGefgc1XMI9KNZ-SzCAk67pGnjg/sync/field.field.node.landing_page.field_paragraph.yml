@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_paragraph
     - node.type.landing_page
+    - paragraphs.paragraphs_type.ept_hero
     - paragraphs.paragraphs_type.uswds_2_columns
     - paragraphs.paragraphs_type.uswds_3_columns
     - paragraphs.paragraphs_type.uswds_accordion
@@ -51,8 +52,15 @@ settings:
       uswds_step_indicator_item: uswds_step_indicator_item
       uswds_step_indicator_list: uswds_step_indicator_list
       uswds_summary_box: uswds_summary_box
+      ept_hero: ept_hero
     negate: 0
     target_bundles_drag_drop:
+      ept_hero:
+        weight: 42
+        enabled: true
+      from_library:
+        weight: 22
+        enabled: false
       text_field:
         weight: 20
         enabled: false

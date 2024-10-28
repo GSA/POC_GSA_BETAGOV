@@ -24,10 +24,16 @@ settings:
       - blockQuote
       - drupalInsertImage
       - '|'
+      - insertTable
       - heading
       - code
       - '|'
       - sourceEditing
+      - paragraphs
+      - uswdsGrid
+      - paragraph_layout
+      - drupalMedia
+      - embeddedContent__default
   plugins:
     ckeditor5_heading:
       enabled_headings:
@@ -58,6 +64,38 @@ settings:
         - '<h4 id>'
         - '<h5 id>'
         - '<h6 id>'
+    media_media:
+      allow_view_mode_override: true
+    uswds_ckeditor_integration_ckeditor5_overrides:
+      override_lists: true
+      override_links: true
+      override_tables: true
+    uswds_ckeditor_integration_ckeditor5_table_content_items:
+      table_content_items: true
+    uswds_ckeditor_integration_grid:
+      available_columns:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+      available_breakpoints:
+        - card
+        - card_lg
+        - mobile
+        - mobile_lg
+        - tablet
+        - tablet_lg
+        - desktop
+        - desktop_lg
+        - widescreen
 image_upload:
   status: true
   scheme: public

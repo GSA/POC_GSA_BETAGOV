@@ -2,13 +2,13 @@ _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: en
 uuid: e5dbaf8f-0b43-493f-ae07-e6cf6b2601e4
-name: 'Drush Site-Install'
+name: 'Betacus Maxi'
 mail: admin@example.com
-slogan: ''
+slogan: 'Sempre Egalitus'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
