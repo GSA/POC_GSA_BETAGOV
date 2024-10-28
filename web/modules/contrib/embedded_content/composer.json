@@ -6,7 +6,7 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "drupal/core": "^9 || ^10 || ^11",
-        "symfony/css-selector": "^4 || ^5 || ^6",
-        "symfony/dom-crawler": "^4 || ^5 || ^6"
+        "symfony/css-selector": "^6 || ^7",
+        "symfony/dom-crawler": "^6 || ^7"
     }
 }

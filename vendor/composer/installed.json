@@ -1187,6 +1187,67 @@
             "install-path": "../doctrine/lexer"
         },
         {
+            "name": "drupal/ckeditor_media_embed",
+            "version": "2.0.2",
+            "version_normalized": "2.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_media_embed.git",
+                "reference": "2.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_media_embed-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "7c95e0bebb5d45d940c97255dbf0d3998143943f"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.2",
+                    "datestamp": "1713998002",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "ElusiveMind",
+                    "homepage": "https://www.drupal.org/user/350597"
+                },
+                {
+                    "name": "grndlvl",
+                    "homepage": "https://www.drupal.org/user/103553"
+                },
+                {
+                    "name": "Jody Lynn",
+                    "homepage": "https://www.drupal.org/user/112500"
+                }
+            ],
+            "description": "Adds the Media Embed CKEditor plugins to Drupal.",
+            "homepage": "https://www.drupal.org/project/embed",
+            "support": {
+                "source": "https://drupal.org/project/ckeditor_media_embed",
+                "issues": "https://drupal.org/project/issues/ckeditor_media_embed"
+            },
+            "install-path": "../../web/modules/contrib/ckeditor_media_embed"
+        },
+        {
             "name": "drupal/core",
             "version": "10.3.6",
             "version_normalized": "10.3.6.0",
@@ -1594,29 +1655,29 @@
         },
         {
             "name": "drupal/embedded_content",
-            "version": "2.0.1",
-            "version_normalized": "2.0.1.0",
+            "version": "2.0.2",
+            "version_normalized": "2.0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/embedded_content.git",
-                "reference": "2.0.1"
+                "reference": "2.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/embedded_content-2.0.1.zip",
-                "reference": "2.0.1",
-                "shasum": "41ec8e052f49ad4e577e07feb44630d5d9be6309"
+                "url": "https://ftp.drupal.org/files/projects/embedded_content-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "373da1a262e28d289b59abcef7cab7c0ec49d2ad"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11",
-                "symfony/css-selector": "^4 || ^5 || ^6",
-                "symfony/dom-crawler": "^4 || ^5 || ^6"
+                "symfony/css-selector": "^6 || ^7",
+                "symfony/dom-crawler": "^6 || ^7"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.1",
-                    "datestamp": "1727350240",
+                    "version": "2.0.2",
+                    "datestamp": "1729321100",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1640,6 +1701,104 @@
                 "source": "https://git.drupalcode.org/project/embedded_content"
             },
             "install-path": "../../web/modules/contrib/embedded_content"
+        },
+        {
+            "name": "drupal/entity_browser",
+            "version": "2.11.0",
+            "version_normalized": "2.11.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_browser.git",
+                "reference": "8.x-2.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-2.11.zip",
+                "reference": "8.x-2.11",
+                "shasum": "4ead3d3f9f6365fbc25cfbd0edcc5e0a9cc52e02"
+            },
+            "require": {
+                "drupal/core": "^10.2 || ^11"
+            },
+            "conflict": {
+                "drupal/media_entity": "1.*"
+            },
+            "require-dev": {
+                "drupal/ckeditor": "^1.0",
+                "drupal/embed": "^1.0",
+                "drupal/entity_embed": "^1.0",
+                "drupal/entity_reference_revisions": "^1.0",
+                "drupal/entityqueue": "^1.0",
+                "drupal/inline_entity_form": "^1.0@rc",
+                "drupal/paragraphs": "^1.0",
+                "drupal/search_api": "^1.0",
+                "drupal/token": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.11",
+                    "datestamp": "1723378138",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Janez Urevc",
+                    "homepage": "https://github.com/slashrsm",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Primoz Hmeljak",
+                    "homepage": "https://github.com/primsi",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/1943336/committers",
+                    "role": "contributor"
+                },
+                {
+                    "name": "Drupal Media Team",
+                    "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "marcingy",
+                    "homepage": "https://www.drupal.org/user/77320"
+                },
+                {
+                    "name": "oknate",
+                    "homepage": "https://www.drupal.org/user/471638"
+                },
+                {
+                    "name": "Primsi",
+                    "homepage": "https://www.drupal.org/user/282629"
+                },
+                {
+                    "name": "samuel.mortenson",
+                    "homepage": "https://www.drupal.org/user/2582268"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                }
+            ],
+            "description": "Entity browsing and selecting component.",
+            "homepage": "https://drupal.org/project/entity_browser",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_browser",
+                "issues": "https://www.drupal.org/project/issues/entity_browser",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            },
+            "install-path": "../../web/modules/contrib/entity_browser"
         },
         {
             "name": "drupal/entity_embed",
@@ -1789,6 +1948,193 @@
             "install-path": "../../web/modules/contrib/entity_reference_revisions"
         },
         {
+            "name": "drupal/entity_usage",
+            "version": "2.0.0-beta14",
+            "version_normalized": "2.0.0.0-beta14",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_usage.git",
+                "reference": "8.x-2.0-beta14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.0-beta14.zip",
+                "reference": "8.x-2.0-beta14",
+                "shasum": "68124ea440273a8f4e40bc7d07421c8a230c287b"
+            },
+            "require": {
+                "drupal/core": "^10.2 || ^11"
+            },
+            "require-dev": {
+                "drupal/block_field": "~1.0",
+                "drupal/ckeditor": "^1.0",
+                "drupal/dynamic_entity_reference": "~1.0 || ^2.0 || ^4.0",
+                "drupal/entity_browser": "~2.0",
+                "drupal/entity_browser_block": "~1.0",
+                "drupal/entity_embed": "~1.0",
+                "drupal/entity_reference_revisions": "~1.0",
+                "drupal/inline_entity_form": "^1.0@RC",
+                "drupal/paragraphs": "~1.0",
+                "drupal/webform": "^6.0.0-alpha4"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0-beta14",
+                    "datestamp": "1724498300",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10 || ^11"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Lullabot",
+                    "homepage": "https://www.drupal.org/user/3815489"
+                },
+                {
+                    "name": "marcoscano",
+                    "homepage": "https://www.drupal.org/user/1288796"
+                },
+                {
+                    "name": "seanB",
+                    "homepage": "https://www.drupal.org/user/545912"
+                }
+            ],
+            "description": "Track usage of entities referenced by other entities",
+            "homepage": "https://www.drupal.org/project/entity_usage",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_usage",
+                "issues": "http://drupal.org/project/issues/entity_usage"
+            },
+            "install-path": "../../web/modules/contrib/entity_usage"
+        },
+        {
+            "name": "drupal/ept_core",
+            "version": "1.4.17",
+            "version_normalized": "1.4.17.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ept_core.git",
+                "reference": "1.4.17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ept_core-1.4.17.zip",
+                "reference": "1.4.17",
+                "shasum": "2bfbf4563d982d10c8fef155aa859a673d28b9c6"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10 || ^11",
+                "drupal/field_group": "^3.0",
+                "drupal/media_library_form_element": "^2.0",
+                "drupal/paragraphs": "^1.0",
+                "levmyshkin/jquery-colorpicker": "^1.0",
+                "levmyshkin/jquery-mb-ytplayer": "^3.3.10",
+                "levmyshkin/parallaxjs": "^1.5",
+                "levmyshkin/vidbg": "^2.1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.4.17",
+                    "datestamp": "1728849210",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "levmyshkin",
+                    "homepage": "https://www.drupal.org/user/1079574"
+                }
+            ],
+            "description": "Extra Paragraph Types (EPT): Core",
+            "homepage": "http://drupal.org/project/ept_core",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/ept_core",
+                "issues": "https://www.drupal.org/project/issues/ept_core"
+            },
+            "install-path": "../../web/modules/contrib/ept_core"
+        },
+        {
+            "name": "drupal/ept_hero",
+            "version": "1.4.4",
+            "version_normalized": "1.4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ept_hero.git",
+                "reference": "1.4.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ept_hero-1.4.4.zip",
+                "reference": "1.4.4",
+                "shasum": "de10a12cb607280c4e0116bf02375fc47fb2c5e4"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10 || ^11",
+                "drupal/ept_core": "^1.4",
+                "drupal/paragraphs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.4.4",
+                    "datestamp": "1722410507",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "levmyshkin",
+                    "homepage": "https://www.drupal.org/user/1079574"
+                }
+            ],
+            "description": "EPT Hero",
+            "homepage": "http://drupal.org/project/ept_hero",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/ept_hero",
+                "issues": "https://www.drupal.org/project/issues/ept_hero"
+            },
+            "install-path": "../../web/modules/contrib/ept_hero"
+        },
+        {
             "name": "drupal/field_group",
             "version": "3.6.0",
             "version_normalized": "3.6.0.0",
@@ -1866,6 +2212,80 @@
                 "issues": "https://www.drupal.org/project/issues/field_group"
             },
             "install-path": "../../web/modules/contrib/field_group"
+        },
+        {
+            "name": "drupal/media_library_form_element",
+            "version": "2.1.1",
+            "version_normalized": "2.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_library_form_element.git",
+                "reference": "2.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_library_form_element-2.1.1.zip",
+                "reference": "2.1.1",
+                "shasum": "4e4ebb8a4642f3cfe700c8cac0009db1f7d3cb99"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.1",
+                    "datestamp": "1724676084",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kim Kennof",
+                    "homepage": "https://www.drupal.org/u/nightlife2008",
+                    "email": "kim.kennof@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "AUSY, a randstad company",
+                    "homepage": "https://www.ausy.be",
+                    "email": "info@ausy.be",
+                    "role": "Sponsor"
+                },
+                {
+                    "name": "mark_fullmer",
+                    "homepage": "https://www.drupal.org/user/2612816"
+                },
+                {
+                    "name": "nightlife2008",
+                    "homepage": "https://www.drupal.org/user/333515"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                }
+            ],
+            "description": "This module provides a Media Library Form API element to be used in all sorts of forms.",
+            "homepage": "https://www.drupal.org/project/media_library_form_element",
+            "keywords": [
+                "Drupal",
+                "Form API",
+                "Media",
+                "Media Library"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/media_library_form_element",
+                "issues": "https://www.drupal.org/project/issues/media_library_form_element"
+            },
+            "install-path": "../../web/modules/contrib/media_library_form_element"
         },
         {
             "name": "drupal/paragraphs",
@@ -2029,6 +2449,81 @@
                 "issues": "https://www.drupal.org/project/issues/paragraphs_entity_embed"
             },
             "install-path": "../../web/modules/contrib/paragraphs_entity_embed"
+        },
+        {
+            "name": "drupal/search_api",
+            "version": "1.35.0",
+            "version_normalized": "1.35.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/search_api.git",
+                "reference": "8.x-1.35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.35.zip",
+                "reference": "8.x-1.35",
+                "shasum": "d119726e870f793c6470d2a4fa9286662c5eb45d"
+            },
+            "require": {
+                "drupal/core": "^10.1 || ^11"
+            },
+            "conflict": {
+                "drupal/search_api_solr": "2.* || 3.0 || 3.1"
+            },
+            "require-dev": {
+                "drupal/language_fallback_fix": "@dev",
+                "drupal/search_api_autocomplete": "@dev",
+                "drupal/search_api_db": "*"
+            },
+            "suggest": {
+                "drupal/facets": "Adds the ability to create faceted searches.",
+                "drupal/search_api_autocomplete": "Allows adding autocomplete suggestions to search fields.",
+                "drupal/search_api_solr": "Adds support for using Apache Solr as a backend."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.35",
+                    "datestamp": "1718551025",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10 || ^11"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Seidl",
+                    "homepage": "https://www.drupal.org/u/drunken-monkey"
+                },
+                {
+                    "name": "Nick Veenhof",
+                    "homepage": "https://www.drupal.org/u/nick_vh"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/790418/committers"
+                }
+            ],
+            "description": "Provides a generic framework for modules offering search capabilities.",
+            "homepage": "https://www.drupal.org/project/search_api",
+            "support": {
+                "source": "https://git.drupalcode.org/project/search_api",
+                "issues": "https://www.drupal.org/project/issues/search_api",
+                "irc": "irc://irc.freenode.org/drupal-search-api"
+            },
+            "install-path": "../../web/modules/contrib/search_api"
         },
         {
             "name": "drupal/twig_tweak",
@@ -3072,6 +3567,144 @@
                 }
             ],
             "install-path": "../league/container"
+        },
+        {
+            "name": "levmyshkin/jquery-colorpicker",
+            "version": "1.0.2",
+            "version_normalized": "1.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/levmyshkin/jquery_colorpicker.git",
+                "reference": "45f9ac11079b73885186ce73b531f0bba1812c7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/levmyshkin/jquery_colorpicker/zipball/45f9ac11079b73885186ce73b531f0bba1812c7f",
+                "reference": "45f9ac11079b73885186ce73b531f0bba1812c7f",
+                "shasum": ""
+            },
+            "time": "2021-12-01T11:34:35+00:00",
+            "type": "drupal-library",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(MIT or GPL-1.0)"
+            ],
+            "description": "The jQuery Colorpicker JS/CSS library. Fork from jaypan/jquery_colorpicker.",
+            "homepage": "https://www.eyecon.ro/colorpicker/",
+            "keywords": [
+                "EBT",
+                "colorpicker",
+                "drupal",
+                "jquery"
+            ],
+            "support": {
+                "source": "https://github.com/levmyshkin/jquery_colorpicker/tree/1.0.2"
+            },
+            "install-path": "../../web/libraries/jquery-colorpicker"
+        },
+        {
+            "name": "levmyshkin/jquery-mb-ytplayer",
+            "version": "3.3.10",
+            "version_normalized": "3.3.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/levmyshkin/jquery.mb.YTPlayer.git",
+                "reference": "037f9d56dc2efb986e4ea89609d7edf2aa0ff438"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/levmyshkin/jquery.mb.YTPlayer/zipball/037f9d56dc2efb986e4ea89609d7edf2aa0ff438",
+                "reference": "037f9d56dc2efb986e4ea89609d7edf2aa0ff438",
+                "shasum": ""
+            },
+            "time": "2021-12-24T14:45:07+00:00",
+            "type": "drupal-library",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(MIT)"
+            ],
+            "description": "jquery.mb.YTPlayer plugin as drupal-library. Fork from https://github.com/pupunzi/jquery.mb.YTPlayer.",
+            "homepage": "https://pupunzi.com/#mb.components/mb.YTPlayer/YTPlayer.html",
+            "keywords": [
+                "EBT",
+                "drupal",
+                "jquery.mb.YTPlayer"
+            ],
+            "support": {
+                "source": "https://github.com/levmyshkin/jquery.mb.YTPlayer/tree/3.3.10"
+            },
+            "install-path": "../../web/libraries/jquery-mb-ytplayer"
+        },
+        {
+            "name": "levmyshkin/parallaxjs",
+            "version": "v1.5.1",
+            "version_normalized": "1.5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/levmyshkin/parallax.js.git",
+                "reference": "bed64e1ad39cabe1130505010f5aaaeb50d4cf86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/levmyshkin/parallax.js/zipball/bed64e1ad39cabe1130505010f5aaaeb50d4cf86",
+                "reference": "bed64e1ad39cabe1130505010f5aaaeb50d4cf86",
+                "shasum": ""
+            },
+            "time": "2021-12-12T14:41:01+00:00",
+            "type": "drupal-library",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(MIT)"
+            ],
+            "description": "Parallax.js pluging as drupal-library. Fork from pixelcog/parallax.js.",
+            "homepage": "https://pixelcog.github.io/parallax.js/",
+            "keywords": [
+                "EBT",
+                "drupal",
+                "parallax.js"
+            ],
+            "support": {
+                "source": "https://github.com/levmyshkin/parallax.js/tree/v1.5.1"
+            },
+            "install-path": "../../web/libraries/parallaxjs"
+        },
+        {
+            "name": "levmyshkin/vidbg",
+            "version": "2.1.0",
+            "version_normalized": "2.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/levmyshkin/vidbg.git",
+                "reference": "29ba2e3bc55f2b238e9a74b6997bbd67630c653e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/levmyshkin/vidbg/zipball/29ba2e3bc55f2b238e9a74b6997bbd67630c653e",
+                "reference": "29ba2e3bc55f2b238e9a74b6997bbd67630c653e",
+                "shasum": ""
+            },
+            "time": "2024-05-03T09:32:29+00:00",
+            "type": "drupal-library",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "An HTML5 video player.",
+            "homepage": "https://drupalbook.org/",
+            "keywords": [
+                "HTML5",
+                "player",
+                "video",
+                "video background"
+            ],
+            "support": {
+                "source": "https://github.com/levmyshkin/vidbg/tree/2.1.0"
+            },
+            "install-path": "../../web/libraries/vidbg"
         },
         {
             "name": "masterminds/html5",
