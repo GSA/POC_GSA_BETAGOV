@@ -23,7 +23,6 @@ module:
   entity_reference_revisions: 0
   entity_usage: 0
   ept_core: 0
-  ept_hero: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -32,6 +31,10 @@ module:
   help: 0
   history: 0
   image: 0
+  layout_discovery: 0
+  layout_paragraphs: 0
+  layout_paragraphs_library: 0
+  layout_paragraphs_permissions: 0
   link: 0
   media: 0
   media_library: 0
@@ -40,6 +43,7 @@ module:
   menu_ui: 0
   mysql: 0
   node: 0
+  node_read_time: 0
   options: 0
   page_cache: 0
   paragraphs_entity_embed: 0
@@ -49,9 +53,12 @@ module:
   responsive_image: 0
   search: 0
   shortcut: 0
+  smart_title: 0
+  smart_title_ui: 0
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   twig_tweak: 0
   update: 0
@@ -71,6 +78,7 @@ module:
   views_ui: 0
   viewsreference: 0
   workflows: 0
+  pathauto: 1
   views: 10
   paragraphs: 11
   standard: 1000

@@ -1,0 +1,17 @@
+add_child_page.configuration_form:
+  path: 'admin/config/content/add-child-page'
+  defaults:
+    _form: '\Drupal\add_child_page\Form\AddChildPageConfigurationForm'
+    _title: 'Add Child Page'
+  requirements:
+    _permission: 'administer content types'
+add_child_page.add_child:
+  path: 'node/{node}/child'
+  defaults:
+    _controller: '\Drupal\add_child_page\Controller\AddChildPage::manage'
+    _title: 'Add Child Page'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: 'access add child page'
+    _custom_access: 'Drupal\add_child_page\Controller\AddChildPage::access'

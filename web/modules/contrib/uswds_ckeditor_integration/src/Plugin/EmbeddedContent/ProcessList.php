@@ -60,16 +60,26 @@ class ProcessList extends EmbeddedContentPluginBase implements EmbeddedContentIn
    * {@inheritdoc}
    */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state): array {
-    $items = $this->configuration['process_items'] ?? [];
+    $items = $this->configuration['items'] ?? [];
+
     if (empty($items)) {
       $items[] = [];
     }
+    if (!$form_state->get('items')) {
+      $form_state->set('items', $items);
+    }
+    else {
+      $items = $form_state->get('items');
+    }
+
     if ($triggeringElement = $form_state->getTriggeringElement()) {
       if (($triggeringElement['#op'] ?? '') == 'remove_item') {
         unset($items[$triggeringElement['#delta']]);
+        $form_state->set('items', $items);
       }
       if (($triggeringElement['#op'] ?? '') == 'add_item') {
         $items[] = [];
+        $form_state->set('items', $items);
       }
     }
 
@@ -146,7 +156,7 @@ class ProcessList extends EmbeddedContentPluginBase implements EmbeddedContentIn
    *   The form element.
    */
   public static function updateItems(array $form, FormStateInterface $form_state): array {
-    return $form['config']['plugin_config']['process_items'];
+    return $form['config']['plugin_config']['uswds_process_list']['process_items'];
   }
 
   /**

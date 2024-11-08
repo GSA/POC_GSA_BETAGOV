@@ -17,8 +17,8 @@ cdn_custom_css_min: 'https://cdn.jsdelivr.net/npm/@uswds/uswds@3.9.0/dist/css/us
 cdn_custom_js: 'https://cdn.jsdelivr.net/npm/@uswds/uswds@3.9.0/dist/js/uswds.js'
 cdn_custom_js_min: 'https://cdn.jsdelivr.net/npm/@uswds/uswds@3.9.0/dist/js/uswds.min.js'
 uswds_header_style: extended
-uswds_header_mega: 0
-uswds_header_mega_display_second: 0
+uswds_header_mega: 1
+uswds_header_mega_display_second: 1
 uswds_government_banner: 1
 uswds_footer_style: big
 uswds_footer_agency: 0

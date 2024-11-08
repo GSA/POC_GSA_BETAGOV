@@ -5,19 +5,21 @@ namespace Drupal\uswds_ckeditor_integration\Plugin\Filter;
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Logger\LoggerChannelTrait;
 use Drupal\Core\Messenger\MessengerTrait;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+use Drupal\filter\Attribute\Filter;
 use Drupal\filter\FilterProcessResult;
 use Drupal\filter\Plugin\FilterBase;
+use Drupal\filter\Plugin\FilterInterface;
 
 /**
  * Filter to apply USWDS Sortable attributes.
- *
- * @Filter(
- *   id = "filter_uswds_table_sortable",
- *   title = @Translation("USWDS Sortable Table Attributes CK5"),
- *   description = @Translation("Apply USWD table sortable attributes. With CKEditor5 in mind."),
- *   type = Drupal\filter\Plugin\FilterInterface::TYPE_TRANSFORM_REVERSIBLE,
- * )
  */
+#[Filter(
+  id: "filter_uswds_table_sortable",
+  title: new TranslatableMarkup("USWDS Sortable Table Attributes CK5"),
+  type: FilterInterface::TYPE_TRANSFORM_REVERSIBLE,
+  description: new TranslatableMarkup("Apply USWD table sortable attributes. With CKEditor5 in mind."),
+)]
 class FilterUswdsTableSortable extends FilterBase {
 
   use LoggerChannelTrait;

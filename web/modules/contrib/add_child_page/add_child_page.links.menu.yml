@@ -1,0 +1,5 @@
+add_child_page.configuration_form:
+  route_name: add_child_page.configuration_form
+  title: 'Add Child Page configuration'
+  description: 'Choose the content type to apply Add Child Page functionality'
+  parent: system.admin_config_content

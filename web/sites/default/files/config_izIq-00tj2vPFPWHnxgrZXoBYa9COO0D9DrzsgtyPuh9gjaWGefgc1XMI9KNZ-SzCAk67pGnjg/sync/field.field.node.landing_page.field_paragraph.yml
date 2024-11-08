@@ -5,20 +5,15 @@ dependencies:
   config:
     - field.storage.node.field_paragraph
     - node.type.landing_page
-    - paragraphs.paragraphs_type.ept_hero
+    - paragraphs.paragraphs_type.text_field
     - paragraphs.paragraphs_type.uswds_2_columns
     - paragraphs.paragraphs_type.uswds_3_columns
     - paragraphs.paragraphs_type.uswds_accordion
-    - paragraphs.paragraphs_type.uswds_accordion_section
     - paragraphs.paragraphs_type.uswds_alert
     - paragraphs.paragraphs_type.uswds_card_group_flag
     - paragraphs.paragraphs_type.uswds_card_group_regular
-    - paragraphs.paragraphs_type.uswds_card_regular
-    - paragraphs.paragraphs_type.uswds_cards_flag
     - paragraphs.paragraphs_type.uswds_modal
-    - paragraphs.paragraphs_type.uswds_process_item
     - paragraphs.paragraphs_type.uswds_process_list
-    - paragraphs.paragraphs_type.uswds_step_indicator_item
     - paragraphs.paragraphs_type.uswds_step_indicator_list
     - paragraphs.paragraphs_type.uswds_summary_box
   module:
@@ -37,33 +32,28 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      text_field: text_field
       uswds_2_columns: uswds_2_columns
       uswds_3_columns: uswds_3_columns
       uswds_accordion: uswds_accordion
-      uswds_accordion_section: uswds_accordion_section
       uswds_alert: uswds_alert
       uswds_card_group_flag: uswds_card_group_flag
       uswds_card_group_regular: uswds_card_group_regular
-      uswds_card_regular: uswds_card_regular
-      uswds_cards_flag: uswds_cards_flag
       uswds_modal: uswds_modal
-      uswds_process_item: uswds_process_item
       uswds_process_list: uswds_process_list
-      uswds_step_indicator_item: uswds_step_indicator_item
       uswds_step_indicator_list: uswds_step_indicator_list
       uswds_summary_box: uswds_summary_box
-      ept_hero: ept_hero
     negate: 0
     target_bundles_drag_drop:
       ept_hero:
         weight: 42
-        enabled: true
+        enabled: false
       from_library:
         weight: 22
         enabled: false
       text_field:
         weight: 20
-        enabled: false
+        enabled: true
       uswds_2_column_breakpoints:
         weight: 21
         enabled: false
@@ -81,7 +71,7 @@ settings:
         enabled: true
       uswds_accordion_section:
         weight: 26
-        enabled: true
+        enabled: false
       uswds_alert:
         weight: 27
         enabled: true
@@ -96,22 +86,22 @@ settings:
         enabled: true
       uswds_card_regular:
         weight: 31
-        enabled: true
+        enabled: false
       uswds_cards_flag:
         weight: 32
-        enabled: true
+        enabled: false
       uswds_modal:
         weight: 33
         enabled: true
       uswds_process_item:
         weight: 34
-        enabled: true
+        enabled: false
       uswds_process_list:
         weight: 35
         enabled: true
       uswds_step_indicator_item:
         weight: 36
-        enabled: true
+        enabled: false
       uswds_step_indicator_list:
         weight: 37
         enabled: true

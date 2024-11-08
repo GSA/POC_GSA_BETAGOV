@@ -21,6 +21,11 @@ uswds_accordion.frontend:
     - core/jquery
     - core/once
 
+dialog:
+  css:
+    component:
+      css/dialog.css: { minified: true }
+
 uswds_grid:
   js:
     js/build/uswds_grid.js: { preprocess: false, minified: true }

@@ -67,15 +67,25 @@ class Accordion extends EmbeddedContentPluginBase implements EmbeddedContentInte
    */
   public function buildConfigurationForm(array $form, FormStateInterface $form_state): array {
     $items = $this->configuration['items'] ?? [];
+
     if (empty($items)) {
       $items[] = [];
     }
+    if (!$form_state->get('items')) {
+      $form_state->set('items', $items);
+    }
+    else {
+      $items = $form_state->get('items');
+    }
+
     if ($triggeringElement = $form_state->getTriggeringElement()) {
       if (($triggeringElement['#op'] ?? '') == 'remove_item') {
         unset($items[$triggeringElement['#delta']]);
+        $form_state->set('items', $items);
       }
       if (($triggeringElement['#op'] ?? '') == 'add_item') {
         $items[] = [];
+        $form_state->set('items', $items);
       }
     }
 
@@ -173,7 +183,7 @@ class Accordion extends EmbeddedContentPluginBase implements EmbeddedContentInte
    *   The form element.
    */
   public static function updateItems(array $form, FormStateInterface $form_state): array {
-    return $form['config']['plugin_config']['items'];
+    return $form['config']['plugin_config']['uswds_accordion']['items'];
   }
 
   /**

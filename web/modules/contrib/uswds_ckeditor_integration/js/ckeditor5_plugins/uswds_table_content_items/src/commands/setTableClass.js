@@ -55,9 +55,6 @@ export default class SetTableClass extends Command {
 
     model.change((writer) => {
       if (remove) {
-        if (this.attributeName === 'scrollable') {
-          writer.unwrap(modelTable.parent);
-        }
         writer.removeAttribute(this.attributeName, modelTable);
       }
       else {

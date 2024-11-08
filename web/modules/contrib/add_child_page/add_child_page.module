@@ -1,0 +1,103 @@
+<?php
+
+/**
+ * @file
+ * Contains hooks for Add Child Page module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Menu\MenuTreeParameters;
+
+/**
+ * Implements hook_help().
+ */
+function add_child_page_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.add_child_page':
+      $text = file_get_contents(__DIR__ . '/README.md');
+      if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
+        return '<pre>' . Html::escape($text) . '</pre>';
+      }
+      else {
+        // Use the Markdown filter to render the README.
+        $filter_manager = \Drupal::service('plugin.manager.filter');
+        $settings = \Drupal::configFactory()->get('markdown.settings')->getRawData();
+        $config = ['settings' => $settings];
+        $filter = $filter_manager->createInstance('markdown', $config);
+        return $filter->process($text, 'en');
+      }
+  }
+  return NULL;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function add_child_page_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+  $id = \Drupal::request()->query->get('plid');
+  $menu_name = \Drupal::request()->query->get('menu');
+
+  if (isset($id) && isset($menu_name)) {
+    $config = \Drupal::config('add_child_page.settings');
+
+    if (!$config->isNew()) {
+      $node_types = $config->get('node_types');
+
+      $ids = [];
+      foreach ($node_types as $types) {
+        $ids[] = 'node_' . $types . '_form';
+      }
+
+      if (in_array($form_id, $ids)) {
+        $parent = add_child_page_get_plid($id);
+        $menu_parameters = new MenuTreeParameters();
+        $menu_parameters->setMaxDepth(1);
+        $menu_parameters->setRoot('menu_link_content:' . $parent);
+        $menu_parameters->excludeRoot();
+        $menu_tree_service = \Drupal::service('menu.link_tree');
+        $tree = $menu_tree_service->load($menu_name, $menu_parameters);
+        $weights = [];
+        foreach ($tree as $item) {
+          $weights[] = $item->link->getWeight();
+        }
+        $weight = (!empty($weights) ? max($weights) + 1 : 0);
+
+        $form['menu']['enabled']['#default_value'] = 1;
+        $form['menu']['#open'] = TRUE;
+        $form['menu']['link']['menu_parent']['#default_value'] = $menu_name . ':menu_link_content:' . $parent;
+        $form['menu']['link']['menu_parent']['#value'] = $menu_name . ':menu_link_content:' . $parent;
+        $form['menu']['link']['weight']['#default_value'] = $weight;
+        // This is needed in order to create the menu_link join path token
+        // for users without the administrator menu permission.
+        // See more in token_form_node_form_alter in the token module.
+        $form['#entity_builders'][] = 'token_node_menu_link_submit';
+      }
+    }
+  }
+}
+
+/**
+ * Helper to return the uuid of the parent.
+ */
+function add_child_page_get_plid($id) {
+  $connection = \Drupal::database();
+  $query = $connection->select('menu_link_content', 'link');
+  $query->fields('link', ['uuid']);
+  $query->condition('link.id', $id);
+  $result = $query->execute()->fetchCol();
+  return reset($result);
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ */
+function add_child_page_module_implements_alter(&$implementations, $hook) {
+  if ($hook == 'form_alter') {
+    $group = $implementations['add_child_page'];
+    unset($implementations['add_child_page']);
+    $implementations['add_child_page'] = $group;
+  }
+}

@@ -16,6 +16,7 @@ uswds_ckeditor_integration_accordion:
     elements:
       - <div class id>
       - <h4 class>
+      - <button>
       - <button class type aria-expanded aria-controls>
 
 uswds_ckeditor_integration_grid:

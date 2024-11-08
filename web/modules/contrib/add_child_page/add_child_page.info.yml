@@ -1,0 +1,14 @@
+name: 'Add Child Page'
+type: module
+description: 'Adds a tab to add a child page to selected node.'
+core_version_requirement: ^8 || ^9 || ^10
+package: Other
+dependencies:
+  - drupal:node
+  - token:token
+configure: add_child_page.configuration_form
+
+# Information added by Drupal.org packaging script on 2022-07-20
+version: '2.0.5'
+project: 'add_child_page'
+datestamp: 1658337159

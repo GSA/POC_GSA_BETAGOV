@@ -8,7 +8,7 @@ dependencies:
   - drupal:media_library
   - embedded_content:embedded_content
 
-# Information added by Drupal.org packaging script on 2024-10-08
-version: '3.1.0'
+# Information added by Drupal.org packaging script on 2024-11-02
+version: '3.1.2'
 project: 'uswds_ckeditor_integration'
-datestamp: 1728409433
+datestamp: 1730570496

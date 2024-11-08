@@ -13,7 +13,7 @@ uswds_ckeditor_integration.settings:
           label:
             type: label
           prefix:
-            type: machine_name
+            type: string
           columns:
             type: sequence
             label: 'Columns'

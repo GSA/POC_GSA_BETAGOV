@@ -3,7 +3,7 @@
     attach(context, settings) {
       // Seems to be a bug in ckeditor5 using buttons and maintaining text
       // See https://github.com/ckeditor/ckeditor5/issues/13268
-      $('div.usa-accordion__button').each(function () {
+      $('.text-formatted div.usa-accordion__button').each(function () {
         const outer = this.outerHTML;
 
         // Replace opening tag
@@ -18,17 +18,21 @@
       });
 
       let $containerCounter = 0;
-      $('main .usa-accordion').each(function () {
+      $('main .text-formatted .usa-accordion').each(function () {
         let $itemCounter = 0;
         $('.usa-accordion__button', this).each(function () {
-          $(this).attr('aria-controls', `${$containerCounter}-${$itemCounter}`);
-          $itemCounter++;
+          if (!$(this).hasAttribute('aria-controls')) {
+            $(this).attr('aria-controls', `${$containerCounter}-${$itemCounter}`);
+            $itemCounter++;
+          }
         });
 
         $itemCounter = 0;
         $('.usa-accordion__content', this).each(function () {
-          $(this).attr('id', `${$containerCounter}-${$itemCounter}`);
-          $itemCounter++;
+          if (!$(this).hasAttribute('id')) {
+            $(this).attr('id', `${$containerCounter}-${$itemCounter}`);
+            $itemCounter++;
+          }
         });
 
         $containerCounter++;
