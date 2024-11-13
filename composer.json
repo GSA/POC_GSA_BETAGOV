@@ -27,6 +27,7 @@
         "drupal/entity_usage": "^2.0@beta",
         "drupal/ept_hero": "^1.4",
         "drupal/layout_paragraphs": "^2.1",
+        "drupal/masquerade": "^2.0",
         "drupal/node_read_time": "^1.15",
         "drupal/paragraphs": "^1.18",
         "drupal/paragraphs_entity_embed": "^3.0",

@@ -1,0 +1,16 @@
+<div class="contact-us-container">
+  <div>
+    <h3>Contact us - Twig test</h3>
+    <div class="contact-paragraph">
+      {{ content.field_contact_paragraph }}
+    </div>
+    <div class="contact-email">
+      <svg class="usa-icon email-icon" aria-hidden="true"><!-- Include Email SVG here --></svg>
+      <a href="mailto:{{ content.field_contact_email }}">{{ content.field_contact_email }}</a>
+    </div>
+    <div class="contact-phone">
+      <svg class="usa-icon phone-icon" aria-hidden="true"><!-- Include Phone SVG here --></svg>
+      <a href="tel:{{ content.field_telephone }}">{{ content.field_telephone }}</a>
+    </div>
+  </div>
+</div>

@@ -4,12 +4,18 @@ status: true
 dependencies:
   config:
     - filter.format.news
+    - filter.format.uswds_paragraphs
     - node.type.article
+    - node.type.landing_page
+    - node.type.news_release
     - node.type.page
     - taxonomy.vocabulary.tags
+    - workflows.workflow.editorial
   module:
-    - comment
+    - content_moderation
     - contextual
+    - embedded_content
+    - entity_reference_revisions
     - file
     - filter
     - node
@@ -20,8 +26,8 @@ dependencies:
 _core:
   default_config_hash: e_wG1u7SrGaJbY2-Szgbgl-c8T3kdirU3uTNq2c_QJQ
 id: content_editor
-label: 'Content editor'
-weight: 2
+label: 'General Content editor'
+weight: -8
 is_admin: false
 permissions:
   - 'access administration pages'
@@ -31,20 +37,30 @@ permissions:
   - 'access toolbar'
   - 'administer url aliases'
   - 'create article content'
+  - 'create landing_page content'
+  - 'create news_release content'
   - 'create page content'
   - 'create terms in tags'
   - 'create url aliases'
   - 'delete article revisions'
+  - 'delete orphan revisions'
   - 'delete own article content'
   - 'delete own files'
   - 'delete own page content'
   - 'delete page revisions'
   - 'edit own article content'
-  - 'edit own comments'
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'use default embedded content button'
+  - 'use editorial transition archive'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition archived_published'
+  - 'use editorial transition publish'
   - 'use text format news'
+  - 'use text format uswds_paragraphs'
   - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view latest version'
   - 'view own unpublished content'
   - 'view the administration theme'

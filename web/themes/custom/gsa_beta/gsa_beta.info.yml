@@ -1,0 +1,14 @@
+name: GSABeta
+type: theme
+description: 'A custom GSA theme extending USWDS Base.'
+base theme: uswds_base
+core_version_requirement: ^10
+libraries:
+  - gsa_beta/global-styling
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Top of page'
+  page_bottom: 'Bottom of page'
+  content: Content
