@@ -3,12 +3,22 @@ type: theme
 description: 'A custom GSA theme extending USWDS Base.'
 base theme: uswds_base
 core_version_requirement: ^10
-libraries:
-  - gsa_beta/global-styling
+
 regions:
-  header: Header
-  primary_menu: 'Primary menu'
-  secondary_menu: 'Secondary menu'
-  page_top: 'Top of page'
-  page_bottom: 'Bottom of page'
-  content: Content
+  header_top: 'Above Header'
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  secondary_menu: 'Secondary Menu'
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Second sidebar'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  hero: 'Hero'
+  content: 'Content'
+  footer_menu: 'Footer Menu'
+  footer: 'Primary Footer'
+  footer_secondary: 'Secondary Footer'
+
+libraries:
+  - 'uswds_beta/assets'

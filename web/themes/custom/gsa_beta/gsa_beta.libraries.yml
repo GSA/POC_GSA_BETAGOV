@@ -1,9 +1,8 @@
-global-styling:
+assets:
+  version: VERSION
   css:
     theme:
-      css/style.css: {}
+      css/styles.css: {}
   js:
-    js/script.js: {}
-  dependencies:
-    - core/drupal
-    - core/jquery
+    assets/uswds/js/uswds-init.min.js: {}
+    assets/uswds/js/uswds.min.js: {}

@@ -6,3 +6,5 @@ web/sites/default/files/*
 *.sql.gz
 *.sql.tgz
 /web/sites/default/files/
+.DS_Store
+/web/themes/custom/gsa_beta/node_modules
