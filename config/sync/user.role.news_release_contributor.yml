@@ -1,0 +1,27 @@
+uuid: a047ba8d-c8d3-43c3-8624-b464225785e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.news
+    - filter.format.uswds_paragraphs
+    - node.type.news_release
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+    - contextual
+    - embedded_content
+    - filter
+    - node
+id: news_release_contributor
+label: 'News Release Contributor'
+weight: -6
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'create news_release content'
+  - 'use default embedded content button'
+  - 'use editorial transition create_new_draft'
+  - 'use text format news'
+  - 'use text format uswds_paragraphs'
+  - 'view latest version'

@@ -1,0 +1,66 @@
+uuid: d2b36db0-7146-407b-933d-85943520fbe3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_release.body
+    - field.field.node.news_release.field_contact_us
+    - field.field.node.news_release.field_navigation_title
+    - field.field.node.news_release.field_subtitle
+    - node.type.news_release
+  module:
+    - smart_title
+    - text
+    - user
+third_party_settings:
+  smart_title:
+    enabled: true
+    settings:
+      smart_title__link: true
+      smart_title__tag: h2
+      smart_title__classes:
+        - node__title
+id: node.news_release.default
+targetEntityType: node
+bundle: news_release
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_contact_us:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_subtitle:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  smart_title:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_navigation_title: true
+  links: true
+  node_read_time: true
+  reading_time: true

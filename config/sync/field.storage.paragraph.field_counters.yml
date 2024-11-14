@@ -1,0 +1,20 @@
+uuid: 80d3d2d5-b2f2-4b48-b77f-76233a53e759
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: G8xTA-ITiaD4heywY5ZYZwkuzEdXM0W-FTDD4ccXWE8
+id: paragraph.field_counters
+field_name: field_counters
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

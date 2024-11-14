@@ -1,0 +1,62 @@
+uuid: d7bd16d9-f6fd-4736-85cd-bc8b46d3daae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contract.body
+    - field.field.node.contract.field_contract_files
+    - field.field.node.contract.field_document_number
+    - node.type.contract
+  module:
+    - field_group
+    - file
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_basic_information:
+      children:
+        - field_document_number
+        - field_contract_files
+      label: 'Basic Information'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+id: node.contract.default
+targetEntityType: node
+bundle: contract
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_contract_files:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_document_number:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true
+  node_read_time: true

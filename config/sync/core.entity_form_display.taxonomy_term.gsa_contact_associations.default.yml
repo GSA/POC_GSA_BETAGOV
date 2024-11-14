@@ -1,0 +1,101 @@
+uuid: c9367f70-c9eb-4757-9d85-220ddad2b7c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.gsa_contact_associations.field_contact_email
+    - field.field.taxonomy_term.gsa_contact_associations.field_contact_paragraph
+    - field.field.taxonomy_term.gsa_contact_associations.field_telephone
+    - taxonomy.vocabulary.gsa_contact_associations
+  module:
+    - field_group
+    - telephone
+    - text
+third_party_settings:
+  field_group:
+    group_publicly_viewable_informat:
+      children:
+        - field_contact_email
+        - field_telephone
+        - field_contact_paragraph
+      label: 'Displayed Information'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+    group_editorial_information:
+      children:
+        - name
+        - description
+      label: 'Editorial Information'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
+id: taxonomy_term.gsa_contact_associations.default
+targetEntityType: taxonomy_term
+bundle: gsa_contact_associations
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_contact_email:
+    type: email_default
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_contact_paragraph:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_telephone:
+    type: telephone_default
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  path: true

@@ -1,0 +1,8 @@
+uuid: 8e20babf-7f85-4be5-a580-7bf7939de6b3
+langcode: en
+status: true
+dependencies: {  }
+id: custom_news_release_title
+label: 'Custom News Release Title'
+revision: false
+description: null

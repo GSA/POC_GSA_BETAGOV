@@ -1,0 +1,14 @@
+uuid: 034a14e5-dcda-4ca8-86ba-1124614933ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.news_release_contributor
+  module:
+    - user
+id: user_remove_role_action.news_release_contributor
+label: 'Remove the News Release Contributor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: news_release_contributor

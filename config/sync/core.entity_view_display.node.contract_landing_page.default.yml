@@ -1,0 +1,29 @@
+uuid: 8a52ac7e-1ace-4aca-864f-e00fc217d98f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contract_landing_page.body
+    - node.type.contract_landing_page
+  module:
+    - text
+    - user
+id: node.contract_landing_page.default
+targetEntityType: node
+bundle: contract_landing_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  node_read_time: true

@@ -1,0 +1,30 @@
+uuid: f93a3c72-5948-4171-bd66-ef73867d07c0
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:alter_bkcol:3ad6b9af-5d0a-4dcf-b20c-d134b9c483f2'
+  module:
+    - block_content
+    - system
+  theme:
+    - uswds_base
+id: uswds_base_stemaltrar
+theme: uswds_base
+region: breadcrumb
+weight: -6
+provider: null
+plugin: 'block_content:3ad6b9af-5d0a-4dcf-b20c-d134b9c483f2'
+settings:
+  id: 'block_content:3ad6b9af-5d0a-4dcf-b20c-d134b9c483f2'
+  label: 'Stem Altrar'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

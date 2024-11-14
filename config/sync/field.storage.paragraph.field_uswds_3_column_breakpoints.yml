@@ -1,0 +1,22 @@
+uuid: 9b0a8284-8bf0-4a06-a43f-17cf89db72d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: NGAuw6U8rLKx6aFX8JKqErfbNld_ZuTkra516cAmFPY
+id: paragraph.field_uswds_3_column_breakpoints
+field_name: field_uswds_3_column_breakpoints
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

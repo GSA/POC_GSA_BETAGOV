@@ -1,0 +1,27 @@
+uuid: f4f229af-65f8-49ad-bd98-f904a7a74484
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_field.field_text
+    - paragraphs.paragraphs_type.text_field
+  module:
+    - text
+_core:
+  default_config_hash: p4soB6fQ_XEGl4bA7Ikjj7y5HqPacI-iaLOPVwVnKZ4
+id: paragraph.text_field.default
+targetEntityType: paragraph
+bundle: text_field
+mode: default
+content:
+  field_text:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

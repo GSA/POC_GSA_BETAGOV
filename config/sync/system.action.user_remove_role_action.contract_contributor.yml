@@ -1,0 +1,14 @@
+uuid: a3691e1c-8bfc-4598-a31a-189b134b63c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.contract_contributor
+  module:
+    - user
+id: user_remove_role_action.contract_contributor
+label: 'Remove the Contract Contributor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: contract_contributor

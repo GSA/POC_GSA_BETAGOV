@@ -1,0 +1,106 @@
+uuid: 22f5006e-48d0-4b3f-a8f1-fc7686a48ef0
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - ckeditor5
+_core:
+  default_config_hash: Qi2tIe-L97EutlMmhEvhsNxZOpOoA-RH82c4BQb5n4A
+format: basic_html
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - bold
+      - italic
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - drupalInsertImage
+      - '|'
+      - insertTable
+      - heading
+      - code
+      - '|'
+      - sourceEditing
+      - paragraphs
+      - uswdsGrid
+      - paragraph_layout
+      - drupalMedia
+      - embeddedContent__default
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_imageResize:
+      allow_resize: true
+    ckeditor5_list:
+      properties:
+        reversed: false
+        startIndex: true
+      multiBlock: true
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<dl>'
+        - '<dt>'
+        - '<dd>'
+        - '<a hreflang>'
+        - '<blockquote cite>'
+        - '<ul type>'
+        - '<ol type>'
+        - '<h2 id>'
+        - '<h3 id>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
+    media_media:
+      allow_view_mode_override: true
+    uswds_ckeditor_integration_ckeditor5_overrides:
+      override_lists: true
+      override_links: true
+      override_tables: true
+    uswds_ckeditor_integration_ckeditor5_table_content_items:
+      table_content_items: true
+    uswds_ckeditor_integration_grid:
+      available_columns:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+      available_breakpoints:
+        - card
+        - card_lg
+        - mobile
+        - mobile_lg
+        - tablet
+        - tablet_lg
+        - desktop
+        - desktop_lg
+        - widescreen
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: null
+  max_dimensions:
+    width: null
+    height: null

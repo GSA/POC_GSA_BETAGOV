@@ -1,0 +1,22 @@
+uuid: ca57d41d-f90b-4c75-aaf6-6e1a29169549
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gsa_beta
+_core:
+  default_config_hash: EgPwIEEdIJhZwAZt2-9cW10iiKNhAhalL9kLLtKX8AA
+id: gsa_beta_messages
+theme: gsa_beta
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

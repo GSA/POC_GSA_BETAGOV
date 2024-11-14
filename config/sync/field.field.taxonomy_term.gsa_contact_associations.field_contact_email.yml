@@ -1,0 +1,19 @@
+uuid: f995abf1-b8d5-4785-8329-91b8dd207bef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_contact_email
+    - taxonomy.vocabulary.gsa_contact_associations
+id: taxonomy_term.gsa_contact_associations.field_contact_email
+field_name: field_contact_email
+entity_type: taxonomy_term
+bundle: gsa_contact_associations
+label: 'Contact Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

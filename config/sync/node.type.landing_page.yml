@@ -1,0 +1,18 @@
+uuid: df8ff24d-f802-4724-8298-e104f5a1717f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Landing Page'
+type: landing_page
+description: 'Use to generate composed content for graphically engaging content.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,40 @@
+uuid: 62a7f55b-67ce-4bbf-91ef-7fee8b07c36a
+langcode: en
+status: false
+dependencies:
+  config:
+    - filter.format.press_release
+  module:
+    - ckeditor5
+format: press_release
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - bold
+      - italic
+      - bulletedList
+      - numberedList
+      - link
+      - undo
+      - redo
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      properties:
+        reversed: true
+        startIndex: true
+      multiBlock: true
+    uswds_ckeditor_integration_ckeditor5_overrides:
+      override_lists: true
+      override_links: true
+      override_tables: true
+image_upload:
+  status: false

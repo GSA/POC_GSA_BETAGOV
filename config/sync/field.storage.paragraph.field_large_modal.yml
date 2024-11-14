@@ -1,0 +1,20 @@
+uuid: d25373b0-c85d-4903-b359-31f675cbd6a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: HY9uZC_Vu851UjqBYEfVxs4rNAZZ3VwqmEiRc1TDU9U
+id: paragraph.field_large_modal
+field_name: field_large_modal
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,14 @@
+uuid: 2975ca5b-bda9-4651-a436-ff51e412880d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.contract_contributor
+  module:
+    - user
+id: user_add_role_action.contract_contributor
+label: 'Add the Contract Contributor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: contract_contributor

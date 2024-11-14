@@ -1,0 +1,20 @@
+uuid: 61bdae2f-9c72-4a13-9e79-6a35e75b6ac5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - uswds_base
+id: uswds_base_tabs
+theme: uswds_base
+region: footer_secondary
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

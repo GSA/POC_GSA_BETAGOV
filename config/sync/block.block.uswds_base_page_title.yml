@@ -1,0 +1,31 @@
+uuid: c9765786-6749-4446-8a54-bdf4ec349a88
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - uswds_base
+_core:
+  default_config_hash: nCwPdh9v96oDlivWz71bLHUdUjXmXNGzCtZZg3hxmco
+id: uswds_base_page_title
+theme: uswds_base
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      landing_page: landing_page
+      page: page

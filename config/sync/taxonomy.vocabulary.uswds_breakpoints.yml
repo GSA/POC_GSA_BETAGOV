@@ -1,0 +1,11 @@
+uuid: 85763069-cd5a-4faa-ab3f-36257e9285a9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _jbEdgG4desTf7E0Vu6B1QIc0tyAUPJM-YXW8uNB3go
+name: 'USWDS Breakpoints'
+vid: uswds_breakpoints
+description: 'breakpoints pulled directly from USWDS.'
+weight: 0
+new_revision: false

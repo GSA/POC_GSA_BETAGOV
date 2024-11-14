@@ -1,0 +1,8 @@
+uuid: 9f7cc21f-f5ac-455b-998d-ab20a145edee
+langcode: en
+status: false
+dependencies: {  }
+name: 'News Release'
+format: press_release
+weight: 0
+filters: {  }

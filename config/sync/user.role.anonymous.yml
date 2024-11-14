@@ -1,0 +1,20 @@
+uuid: a3f8b77d-1b3d-4aee-aace-4b45b50138c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs_entity_embed
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: -10
+is_admin: false
+permissions:
+  - 'access content'
+  - 'search content'
+  - 'view media'
+  - 'view paragraphs entity embed'

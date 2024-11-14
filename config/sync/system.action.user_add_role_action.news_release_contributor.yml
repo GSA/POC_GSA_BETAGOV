@@ -1,0 +1,14 @@
+uuid: d92bdee1-9478-4453-ae91-62bf9fb73e7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.news_release_contributor
+  module:
+    - user
+id: user_add_role_action.news_release_contributor
+label: 'Add the News Release Contributor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: news_release_contributor

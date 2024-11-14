@@ -1,0 +1,21 @@
+uuid: f4685bbd-38b5-4df5-86b7-54a00b1104ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_telephone
+    - taxonomy.vocabulary.gsa_contact_associations
+  module:
+    - telephone
+id: taxonomy_term.gsa_contact_associations.field_telephone
+field_name: field_telephone
+entity_type: taxonomy_term
+bundle: gsa_contact_associations
+label: Telephone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

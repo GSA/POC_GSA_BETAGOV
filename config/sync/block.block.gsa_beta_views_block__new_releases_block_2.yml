@@ -1,0 +1,32 @@
+uuid: 159e6767-0834-4992-92e2-3ae73d71d444
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.new_releases
+  module:
+    - node
+    - views
+  theme:
+    - gsa_beta
+id: gsa_beta_views_block__new_releases_block_2
+theme: gsa_beta
+region: header
+weight: -4
+provider: null
+plugin: 'views_block:new_releases-block_2'
+settings:
+  id: 'views_block:new_releases-block_2'
+  label: 'Recent Releases'
+  label_display: visible
+  provider: views
+  views_label: 'Recent Releases'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news_release: news_release

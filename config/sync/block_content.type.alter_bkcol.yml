@@ -1,0 +1,8 @@
+uuid: 51f3f706-7ca7-4fc3-be3f-243f65a9555f
+langcode: en
+status: true
+dependencies: {  }
+id: alter_bkcol
+label: 'Alter Bkcol'
+revision: true
+description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim sagittis dui ut tempus. Suspendisse nunc lacus, posuere at erat vitae, eleifend consectetur lorem. Integer eget libero tellus. Duis sed ipsum nec urna elementum volutpat vitae finibus tortor. Praesent at sapien convallis nibh vestibulum volutpat. Quisque convallis bibendum ligula at ornare. Praesent vehicula rutrum est, id placerat nulla bibendum mollis. Aliquam vulputate id risus nec aliquet. Integer non iaculis purus, sed gravida neque. In hac habitasse platea dictumst. Aliquam sed neque gravida, posuere dolor vel, consequat elit. Nam non feugiat lacus.'

@@ -1,0 +1,53 @@
+uuid: d83bf79f-3495-4acb-9805-7f92c13cba0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.alter_bkcol
+    - block_content.type.basic
+    - block_content.type.custom_news_release_title
+    - filter.format.news
+    - filter.format.uswds_paragraphs
+  module:
+    - block_content
+    - contextual
+    - embedded_content
+    - entity_reference_revisions
+    - filter
+    - image
+    - layout_paragraphs_permissions
+id: site_editor
+label: 'Site Structure Editor'
+weight: -4
+is_admin: null
+permissions:
+  - 'access block library'
+  - 'access contextual links'
+  - 'administer block content'
+  - 'administer block types'
+  - 'administer image styles'
+  - 'create alter_bkcol block content'
+  - 'create basic block content'
+  - 'create custom_news_release_title block content'
+  - 'delete any alter_bkcol block content'
+  - 'delete any alter_bkcol block content revisions'
+  - 'delete any basic block content'
+  - 'delete any basic block content revisions'
+  - 'delete any custom_news_release_title block content'
+  - 'delete any custom_news_release_title block content revisions'
+  - 'delete orphan revisions'
+  - 'duplicate layout paragraphs components'
+  - 'edit any alter_bkcol block content'
+  - 'edit any basic block content'
+  - 'edit any custom_news_release_title block content'
+  - 'edit layout paragraphs plugin config'
+  - 'reorder layout paragraphs components'
+  - 'revert any alter_bkcol block content revisions'
+  - 'revert any basic block content revisions'
+  - 'revert any custom_news_release_title block content revisions'
+  - 'use default embedded content button'
+  - 'use text format news'
+  - 'use text format uswds_paragraphs'
+  - 'view any alter_bkcol block content history'
+  - 'view any basic block content history'
+  - 'view any custom_news_release_title block content history'

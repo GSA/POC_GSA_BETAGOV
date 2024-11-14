@@ -1,0 +1,20 @@
+uuid: dee24861-ec6b-403e-8a89-2bf82d6f6a90
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
+id: authenticated
+label: 'Authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access shortcuts'
+  - 'search content'
+  - 'view media'

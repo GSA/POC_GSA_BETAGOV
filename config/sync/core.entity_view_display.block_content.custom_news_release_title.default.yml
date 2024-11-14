@@ -1,0 +1,22 @@
+uuid: 95ae857b-c2c3-48d0-bb11-159e5887f795
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.custom_news_release_title
+    - field.field.block_content.custom_news_release_title.body
+  module:
+    - text
+id: block_content.custom_news_release_title.default
+targetEntityType: block_content
+bundle: custom_news_release_title
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

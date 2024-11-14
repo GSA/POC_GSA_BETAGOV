@@ -1,0 +1,19 @@
+uuid: c8781524-2fdb-4f52-8869-fbe516550d07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_navigation_title
+    - node.type.news_release
+id: node.news_release.field_navigation_title
+field_name: field_navigation_title
+entity_type: node
+bundle: news_release
+label: 'Navigation Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

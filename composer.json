@@ -19,6 +19,7 @@
         "drupal/add_child_page": "^2.0",
         "drupal/base_field_override_ui": "^1.2",
         "drupal/ckeditor_media_embed": "^2.0",
+        "drupal/config_split": "^2.0",
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",

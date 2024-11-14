@@ -1,0 +1,27 @@
+uuid: e6cbd225-4e1e-4fcb-ac32-ef6518b9c505
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_contact_paragraph
+    - filter.format.basic_html
+    - taxonomy.vocabulary.gsa_contact_associations
+  module:
+    - text
+id: taxonomy_term.gsa_contact_associations.field_contact_paragraph
+field_name: field_contact_paragraph
+entity_type: taxonomy_term
+bundle: gsa_contact_associations
+label: 'Contact Paragraph'
+description: 'This information appears below the Contact Us text, and above the Email and Phone links.'
+required: false
+translatable: false
+default_value:
+  -
+    value: '<p>Donec enim mauris, fermentum in ligula vitae, tincidunt condimentum tellus. Nunc eu pretium purus. Nulla est lorem, fringilla eu sem id, congue luctus diam. Nullam elementum in urna a lobortis. Mauris vel erat eget nisi porttitor blandit. Aenean arcu leo, convallis ac neque sit amet, imperdiet ullamcorper turpis. Quisque cursus, augue in laoreet volutpat, justo purus gravida mauris, ut posuere dui orci vel est. Donec vel molestie elit. Morbi nec porta lectus.</p>'
+    format: basic_html
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

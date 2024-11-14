@@ -1,0 +1,22 @@
+uuid: d90198d6-553b-444c-8f44-5bd085e35308
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gsa_beta
+_core:
+  default_config_hash: EMaHqTPYMYBCgJxDNacklCOc4izcUYu8hOdorw0vzzU
+id: gsa_beta_local_tasks
+theme: gsa_beta
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

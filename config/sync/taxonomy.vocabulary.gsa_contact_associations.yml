@@ -1,0 +1,9 @@
+uuid: db3d4222-8f8e-40fe-8e6b-c1bcabfd35f8
+langcode: en
+status: true
+dependencies: {  }
+name: 'GSA Contact Associations'
+vid: gsa_contact_associations
+description: 'This taxonomy is selected on a press release to introduce a Contact box on the page'
+weight: 0
+new_revision: false

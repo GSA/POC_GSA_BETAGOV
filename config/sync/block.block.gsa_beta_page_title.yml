@@ -1,0 +1,31 @@
+uuid: aa22167d-d9dd-40a8-86f5-22f9c2295d6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - gsa_beta
+_core:
+  default_config_hash: nCwPdh9v96oDlivWz71bLHUdUjXmXNGzCtZZg3hxmco
+id: gsa_beta_page_title
+theme: gsa_beta
+region: content
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      landing_page: landing_page
+      page: page

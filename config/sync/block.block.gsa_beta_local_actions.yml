@@ -1,0 +1,20 @@
+uuid: 05b2e23a-8ffe-491a-97a4-414eba691fa4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gsa_beta
+_core:
+  default_config_hash: WvhJomAnIQT0keg1Yz2xbxmqzqT4vGCfSbSK2M6XQLs
+id: gsa_beta_local_actions
+theme: gsa_beta
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

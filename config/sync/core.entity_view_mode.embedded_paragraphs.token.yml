@@ -1,0 +1,11 @@
+uuid: c73369d4-9968-49a2-93f0-dfa50817bb85
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_entity_embed
+id: embedded_paragraphs.token
+label: Token
+description: ''
+targetEntityType: embedded_paragraphs
+cache: true

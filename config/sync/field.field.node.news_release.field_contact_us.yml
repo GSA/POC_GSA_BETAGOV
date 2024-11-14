@@ -1,0 +1,29 @@
+uuid: 8663f31d-8ed8-492a-a10a-c19907863709
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_us
+    - node.type.news_release
+    - taxonomy.vocabulary.gsa_contact_associations
+id: node.news_release.field_contact_us
+field_name: field_contact_us
+entity_type: node
+bundle: news_release
+label: 'Contact Us'
+description: "Select a contact from the Contact List to add a Contact Block on the bottom of this page. \r\nCommon New Release Contact include:\r\n- General Office contact\r\n- Southwestern Public Service Office"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gsa_contact_associations: gsa_contact_associations
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

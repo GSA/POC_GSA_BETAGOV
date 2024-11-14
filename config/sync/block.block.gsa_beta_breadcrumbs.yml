@@ -1,0 +1,22 @@
+uuid: 0e78161c-70a4-4b52-a177-d7407a5d00a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gsa_beta
+_core:
+  default_config_hash: vk6Vdm_OwlRR94AcQvjxPVahMS_nQLYmg0K_slaZKZ8
+id: gsa_beta_breadcrumbs
+theme: gsa_beta
+region: content
+weight: -3
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

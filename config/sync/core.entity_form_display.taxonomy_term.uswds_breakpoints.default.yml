@@ -1,0 +1,31 @@
+uuid: a1bd5a4c-8a86-46e0-a12d-44d4d8212178
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.uswds_breakpoints
+_core:
+  default_config_hash: KpQ1kCzq4InjO2KfiGbsTjtpevSO1W45liOTlfTiaTg
+id: taxonomy_term.uswds_breakpoints.default
+targetEntityType: taxonomy_term
+bundle: uswds_breakpoints
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 1
+    region: content
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

@@ -1,0 +1,114 @@
+uuid: 5eb3a09b-8ef1-4b2c-809f-e85e1e6905a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.news_release.body
+    - field.field.node.news_release.field_contact_us
+    - field.field.node.news_release.field_navigation_title
+    - field.field.node.news_release.field_subtitle
+    - node.type.news_release
+  module:
+    - field_group
+    - smart_title
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_titles_and_navigation:
+      children:
+        - field_navigation_title
+      label: 'Titles and navigation'
+      parent_name: ''
+      region: hidden
+      weight: 8
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+    group_area_below_title:
+      children:
+        - field_subtitle
+      label: 'Area below title'
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: true
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+  smart_title:
+    enabled: true
+    settings:
+      smart_title__link: false
+      smart_title__tag: h1
+      smart_title__classes:
+        - site-page-title
+id: node.news_release.full
+targetEntityType: node
+bundle: news_release
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_contact_us:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  node_read_time:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  smart_title:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_navigation_title: true
+  reading_time: true

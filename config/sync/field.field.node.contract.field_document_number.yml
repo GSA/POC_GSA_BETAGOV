@@ -1,0 +1,19 @@
+uuid: 1839e30c-8ad1-4456-b932-a6dde390b882
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document_number
+    - node.type.contract
+id: node.contract.field_document_number
+field_name: field_document_number
+entity_type: node
+bundle: contract
+label: 'Document Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 7817b5f3-9447-4ac3-9a71-0ed614b23837
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.news_release
+id: node.news_release.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: news_release
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

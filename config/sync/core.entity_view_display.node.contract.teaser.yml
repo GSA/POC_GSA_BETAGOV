@@ -1,0 +1,35 @@
+uuid: fbd616cc-f2b9-4754-be13-8d3d9c5da457
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contract.body
+    - field.field.node.contract.field_contract_files
+    - field.field.node.contract.field_document_number
+    - node.type.contract
+  module:
+    - text
+    - user
+id: node.contract.teaser
+targetEntityType: node
+bundle: contract
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_contract_files: true
+  field_document_number: true
+  node_read_time: true

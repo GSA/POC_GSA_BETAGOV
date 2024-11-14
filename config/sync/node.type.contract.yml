@@ -1,0 +1,17 @@
+uuid: 44818e2a-a617-41c5-b55b-67d13da65a91
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Contract
+type: contract
+description: 'Store contract documents'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

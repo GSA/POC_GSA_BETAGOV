@@ -1,0 +1,22 @@
+uuid: ab4980e9-6e13-4b4c-a287-b3cd6c6a88e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - gsa_beta
+_core:
+  default_config_hash: kZYm0IFDqdGZFVnT4IcGM4VknJc3u4SBbsI71Gz8qFM
+id: gsa_beta_help
+theme: gsa_beta
+region: content
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

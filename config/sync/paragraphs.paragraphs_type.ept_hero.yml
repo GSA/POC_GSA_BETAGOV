@@ -1,0 +1,17 @@
+uuid: 471f49ad-eb34-43fa-ae39-f7ddab664e61
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+_core:
+  default_config_hash: Kps1UJbRPEF2GuSjDQDJFWWG5EZ6qTHII92BJxLlwTk
+id: ept_hero
+label: 'EPT Hero'
+icon_uuid: null
+icon_default: null
+description: 'Extra Paragraph Type (EPT): EPT Hero'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

@@ -1,0 +1,112 @@
+uuid: 0062c629-7599-4af1-bdd5-3fa846e624dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.text_field
+    - paragraphs.paragraphs_type.uswds_2_columns
+    - paragraphs.paragraphs_type.uswds_3_columns
+    - paragraphs.paragraphs_type.uswds_accordion
+    - paragraphs.paragraphs_type.uswds_alert
+    - paragraphs.paragraphs_type.uswds_card_group_flag
+    - paragraphs.paragraphs_type.uswds_card_group_regular
+    - paragraphs.paragraphs_type.uswds_modal
+    - paragraphs.paragraphs_type.uswds_process_list
+    - paragraphs.paragraphs_type.uswds_step_indicator_list
+    - paragraphs.paragraphs_type.uswds_summary_box
+  module:
+    - entity_reference_revisions
+    - paragraphs_library
+id: paragraphs_library_item.paragraphs_library_item.paragraphs
+field_name: paragraphs
+entity_type: paragraphs_library_item
+bundle: paragraphs_library_item
+label: Paragraphs
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      from_library: from_library
+      text_field: text_field
+      uswds_2_columns: uswds_2_columns
+      uswds_3_columns: uswds_3_columns
+      uswds_accordion: uswds_accordion
+      uswds_alert: uswds_alert
+      uswds_card_group_flag: uswds_card_group_flag
+      uswds_card_group_regular: uswds_card_group_regular
+      uswds_modal: uswds_modal
+      uswds_process_list: uswds_process_list
+      uswds_step_indicator_list: uswds_step_indicator_list
+      uswds_summary_box: uswds_summary_box
+    negate: 0
+    target_bundles_drag_drop:
+      ept_hero:
+        weight: 22
+        enabled: false
+      from_library:
+        weight: 23
+        enabled: true
+      text_field:
+        weight: 24
+        enabled: true
+      uswds_2_column_breakpoints:
+        weight: 26
+        enabled: false
+      uswds_2_columns:
+        weight: 25
+        enabled: true
+      uswds_3_column_breakpoints:
+        weight: 28
+        enabled: false
+      uswds_3_columns:
+        weight: 27
+        enabled: true
+      uswds_accordion:
+        weight: 29
+        enabled: true
+      uswds_accordion_section:
+        weight: 30
+        enabled: false
+      uswds_alert:
+        weight: 31
+        enabled: true
+      uswds_card_breakpoints:
+        weight: 33
+        enabled: false
+      uswds_card_group_flag:
+        weight: 34
+        enabled: true
+      uswds_card_group_regular:
+        weight: 35
+        enabled: true
+      uswds_card_regular:
+        weight: 36
+        enabled: false
+      uswds_cards_flag:
+        weight: 32
+        enabled: false
+      uswds_modal:
+        weight: 37
+        enabled: true
+      uswds_process_item:
+        weight: 38
+        enabled: false
+      uswds_process_list:
+        weight: 39
+        enabled: true
+      uswds_step_indicator_item:
+        weight: 40
+        enabled: false
+      uswds_step_indicator_list:
+        weight: 41
+        enabled: true
+      uswds_summary_box:
+        weight: 42
+        enabled: true
+field_type: entity_reference_revisions

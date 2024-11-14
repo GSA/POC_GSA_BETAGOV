@@ -1,0 +1,23 @@
+uuid: 5cb9272f-932a-422c-92e3-d116ce850b75
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - gsa_beta
+_core:
+  default_config_hash: vTmNF6e_XzlKIeu4-KYMAFiaY5F4hPhNRtodyBYeZBw
+id: gsa_beta_search
+theme: gsa_beta
+region: secondary_menu
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }
