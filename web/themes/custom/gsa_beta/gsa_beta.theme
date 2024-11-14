@@ -15,3 +15,7 @@ function gsa_beta_subtheme_preprocess(&$variables) {
   $variables['active_theme_path'] = base_path() . \Drupal::theme()->getActiveTheme()->getPath();
   $variables['uswds_images'] = $variables['active_theme_path'] . '/node_modules/@uswds/uswds/dist/img/';
 }
+
+function gsa_beta_preprocess_page(&$variables) {
+  $variables['#attached']['library'][] = 'gsa_beta/global-styling';
+}

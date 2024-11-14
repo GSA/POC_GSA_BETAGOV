@@ -1,0 +1,42 @@
+
+.contact-details {
+  margin-top: 10px;
+}
+
+.contact-details a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #0056b3; /* Blue color for links */
+  font-size: 16px;
+}
+
+.contact-details svg {
+  fill: #0056b3; /* Blue color for SVG icons */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* Style for telephone numbers and email addresses */
+.field--name-field-contact-email,
+.field--name-field-telephone {
+  display: block;
+  margin-top: 10px;
+}
+
+.contact-us-container {
+  font-family: Arial, sans-serif; /* Adjust the font family as per your design */
+  color: #333; /* Dark grey text color */
+  background-color: #f9f9f9; /* Light grey background */
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+.contact-us-container h3 {
+  margin-bottom: 15px;
+  color: #000; /* Black color for the header */
+}

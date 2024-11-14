@@ -1,9 +1,8 @@
-assets:
-  version: VERSION
+global-styling:
+  version: 1.x
   css:
     theme:
       css/styles.css: {}
-      dist/css/css/styles.css: {}
   js:
     assets/uswds/js/uswds-init.min.js: {}
     assets/uswds/js/uswds.min.js: {}

@@ -21,4 +21,10 @@ regions:
   footer_secondary: 'Secondary Footer'
 
 libraries:
-  - 'uswds_beta/assets'
+  - 'gsa_beta/global-styling'
+
+libraries-override:
+  uswds/uswds:
+    css:
+      theme:
+        assets/css/uswds.css: dist/css/styles.css
