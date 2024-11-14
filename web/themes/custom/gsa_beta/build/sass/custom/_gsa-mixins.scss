@@ -1,0 +1,67 @@
+/*
+ * Mixins outside of USWDS Framework.
+ */
+@mixin text-shadow($text-color: #fff) {
+  text-shadow: #3d4551 0.03em 0.02em 0.13em;
+  color: $text-color;
+}
+
+@mixin slide-in() {
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@mixin slide-up() {
+  -webkit-animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@mixin usa-button() {
+  color: white !important;
+  @include border-box-sizing;
+  @include typeset($theme-button-font-family, null, 1);
+  @include set-text-and-bg("primary", $context: $button-context);
+  appearance: none;
+  border: 0;
+  border-radius: radius($theme-button-border-radius);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: font-weight("bold");
+  margin-right: units(1);
+  padding: units(1.5) units(2.5);
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+
+  @include at-media("mobile-lg") {
+    width: auto;
+  }
+
+  &:visited {
+    color: color("white");
+  }
+
+  &:hover,
+  &.usa-button--hover {
+    @include set-text-and-bg("primary-dark", $context: $button-context);
+    border-bottom: 0;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.usa-button--active {
+    @include set-text-and-bg("primary-darker", $context: $button-context);
+  }
+}
+
+//Table Formatting
+@mixin tableZebra($table-zebra-color) {
+  th {
+    font-weight: 700;
+    background-color: #efeadf;
+  }
+
+  >tbody>tr:nth-of-type(odd) td {
+    background-color: $table-zebra-color;
+  }
+}

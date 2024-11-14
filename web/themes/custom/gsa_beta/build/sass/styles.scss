@@ -1,0 +1,100 @@
+@forward "uswds-theme";
+// --- Exclude core uswds package and import individual components one by one to reduce size and customize
+//@forward "uswds";
+@forward "uswds-theme-custom-styles";
+@forward "uswds-global";
+// Then import individual component packages...
+// Import individual component packages...
+@forward 'uswds-form-controls';
+//@forward 'form-templates';
+@forward 'uswds-typography';
+@forward 'usa-validation';
+@forward 'usa-accordion';
+@forward 'usa-alert';
+@forward 'usa-banner';
+@forward 'usa-breadcrumb';
+@forward 'usa-button-group';
+@forward 'usa-button';
+@forward 'usa-card';
+@forward 'usa-checklist';
+@forward 'usa-collection';
+//@forward 'usa-footer';
+//@forward 'usa-header';
+@forward 'usa-hero';
+@forward 'usa-icon-list';
+@forward 'usa-icon';
+@forward 'usa-identifier';
+@forward "usa-in-page-navigation";
+@forward 'usa-layout-grid';
+@forward 'usa-link';
+@forward 'usa-media-block';
+//@forward 'usa-megamenu';
+@forward 'usa-modal';
+//@forward 'usa-nav-container';
+//@forward 'usa-nav';
+//@forward 'usa-navbar';
+@forward 'usa-pagination';
+@forward 'usa-process-list';
+@forward 'usa-search';
+//@forward 'usa-section';
+//@forward 'usa-sidenav';
+@forward 'usa-site-alert';
+@forward 'usa-skipnav';
+@forward 'usa-step-indicator';
+@forward 'usa-summary-box';
+//@forward 'usa-table';
+@forward 'usa-tag';
+@forward 'usa-tooltip';
+// @import 'packages/uswds-components';
+@import 'uswds-utilities';
+// -------------------------------------
+// ...or import the complete USWDS kit
+//@import "uswds";
+// Lets not overwrite uswds and instead copy and edit directly.
+@import "uswds-theme-gsa-color";
+@import "extends/mixins";
+@import "extends/header";
+@import "extends/navigation";
+@import "extends/footer";
+@import "extends/table";
+@import "extends/table_extends";
+// -------------------------------------
+// Import theme custom styles
+@import "custom/globals";
+@import "custom/directives";
+@import "custom/left-nav";
+@import "custom/homepage";
+@import "custom/search-block";
+@import "custom/megamenu";
+@import "custom/megamenu_base";
+@import "custom/region-footer";
+@import "custom/backtotop";
+@import "custom/breadcrumb";
+@import "custom/region-content";
+@import "custom/contextual-tabs-template";
+@import "custom/page-banners";
+@import "custom/infoblocks";
+@import "custom/gsa-mixins";
+.region.region-content {
+  @import "custom/tables";
+}
+@import "custom/views-exposed-forms";
+@import "custom/views_slideshow";
+@import "custom/events";
+@import "custom/sitemap";
+@import "custom/size-mixins";
+@import "custom/image-sizes";
+@import "custom/in-page-nav";
+@import "custom/newsreleases";
+@import "custom/event-detail";
+@import "custom/topic_page_footer";
+@import "custom/theme-icons";
+@import "custom/template-featured-microsite";
+@import "custom/content-iframe-sizing";
+@import "custom/insite-search";
+@import "custom/template-topic-microsite";
+
+pre {
+  margin: 0.5em 0;
+  white-space: pre-wrap;
+}

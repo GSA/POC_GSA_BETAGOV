@@ -1,0 +1,42 @@
+.view-rotating-feature-block {
+  background: #f1f1f1;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 10px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .views_slideshow_cycle_teaser_section {
+    display: flex;
+    width: auto !important;
+  }
+
+  .views_slideshow_cycle_slide {
+    width: 100% !important;
+  }
+
+  .views-slideshow-pager-bullets {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    li {
+      background: #8fc7ea;
+      border: 1px solid #8fc7ea;
+      border-radius: 10px;
+      line-height: 14px;
+      padding: 0 7px;
+      margin: 0.2em;
+      &.active,
+      &:hover {
+        background: #ffffff;
+      }
+    }
+  }
+
+
+}

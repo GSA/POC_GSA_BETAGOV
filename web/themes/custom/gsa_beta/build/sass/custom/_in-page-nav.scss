@@ -1,0 +1,18 @@
+@use "uswds-core" as *;
+.node-content .usa-in-page-nav-container .usa-in-page-nav{
+  top: 0;
+  margin-top: -4em;
+  .usa-in-page-nav__item {
+    font-size: .81rem;
+    min-width: 175px;
+  }
+  .usa-in-page-nav__nav{
+    padding: 1rem 0;
+  }
+}
+
+@include at-media-max(desktop) {
+  .usa-in-page-nav-container .usa-in-page-nav{
+    display: none;
+  }
+}

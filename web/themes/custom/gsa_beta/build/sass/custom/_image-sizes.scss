@@ -1,0 +1,52 @@
+.usa-small,
+.usa-medium,
+.usa-large,
+.usa-full_width,
+.usa-fixed {
+  @include gsa_image-init;
+  img {
+    order: -1 !important;
+  }
+  a.long-description {
+    order: 1 !important;
+    width:100%;
+  }
+  .img-caption {
+    order: 0 !important;
+  }
+}
+div {
+  &.usa-small {
+    @include gsa_small--image;
+  }
+  &.usa-medium {
+    @include gsa_medium--image;
+  }
+  &.usa-large {
+    @include gsa_large--image;
+  }
+  &.usa-full_width {
+    @include gsa_full--image;
+    float: none;
+  }
+  &.usa-fixed {
+
+    display: grid !important;
+    //img {
+    //  width: 100%!important;
+    //}
+    //flex-direction: column;
+  }
+  &.captioned-img img {
+    width: 100%!important;
+  }
+}
+ol.usa-process-list {
+  .usa-small,
+  .usa-medium,
+  .usa-large,
+  .usa-full_width,
+  .usa-fixed {
+    float: none;
+  }
+}

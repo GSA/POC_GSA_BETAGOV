@@ -1,8 +1,49 @@
 {
+  "name": "@uswds/compile",
+  "version": "1.0.0",
+  "description": "A Gulp-based compiler for USWDS Sass",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "gulp init",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uswds/uswds-compile.git"
+  },
+  "author": "USWDS Core team",
+  "contributors": [
+    "Dan O. Williams <daniel.williams@gsa.gov>",
+    "James Mejia <james.mejia@gsa.gov>",
+    "Scott Queen <scott.queen@gsa.gov>"
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/uswds/uswds-compile/issues"
+  },
+  "homepage": "https://github.com/uswds/uswds-compile#readme",
   "dependencies": {
-    "gulp": "^5.0.0"
+    "@uswds/uswds": "3.8.1",
+    "autoprefixer": "10.4.16",
+    "del": "7.1.0",
+    "gulp": "^5.0.0",
+    "gulp-postcss": "9.0.1",
+    "gulp-rename": "2.0.0",
+    "gulp-replace": "1.1.4",
+    "gulp-sass": "5.1.0",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-svgstore": "9.0.0",
+    "postcss": "8.4.32",
+    "postcss-csso": "6.0.1",
+    "sass-embedded": "^1.77.2"
   },
   "devDependencies": {
-    "@uswds/compile": "^1.2.0"
+    "@uswds/compile": "^1.2.0",
+    "@uswds/uswds": "3.8.1"
+  },
+  "keywords": [],
+  "optionalDependencies": {
+    "sass-embedded-darwin-arm64": "^1.72.0"
   }
 }

@@ -1,0 +1,7 @@
+@use "uswds-core" as *;
+#backtotop {
+  background-color: $gsa-primary-lighter;
+  div {
+    @include add-background-svg(angle-arrow-up-primary);
+  }
+}

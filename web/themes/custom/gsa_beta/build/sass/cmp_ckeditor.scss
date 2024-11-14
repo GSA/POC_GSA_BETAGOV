@@ -1,0 +1,165 @@
+/*
+ *
+ * Controls a lightweight css stylesheet for ckeditor
+ *
+ */
+@forward "uswds-theme";
+
+@forward "uswds-theme-custom-styles";
+//@forward "uswds-global";
+@forward 'uswds-utilities';
+
+// Import individual component packages...
+//@forward 'uswds-form-controls';
+//@forward 'form-templates';
+@forward 'usa-layout-grid';
+@forward 'uswds-typography';
+//@forward 'usa-validation';
+@forward 'usa-accordion';
+@forward 'usa-alert';
+@forward 'usa-banner';
+//@forward 'usa-breadcrumb';
+@forward 'usa-button-group';
+@forward 'usa-button';
+@forward 'usa-card';
+@forward 'usa-checklist';
+@forward 'usa-collection';
+//@forward 'usa-footer';
+//@forward 'usa-header';
+//@forward 'usa-hero';
+@forward 'usa-icon-list';
+@forward 'usa-icon';
+//@forward 'usa-identifier';
+//@forward 'usa-layout';
+@forward 'usa-link';
+@forward 'usa-media-block';
+//@forward 'usa-megamenu';
+@forward 'usa-modal';
+//@forward 'nav-container';
+//@forward 'usa-nav';
+//@forward 'usa-navbar';
+@forward 'usa-pagination';
+@forward 'usa-process-list';
+//@forward 'usa-search';
+//@forward 'usa-section';
+//@forward 'usa-sidenav';
+@forward 'usa-site-alert';
+@forward 'usa-skipnav';
+@forward 'usa-step-indicator';
+@forward 'usa-summary-box';
+//@forward 'usa-table';
+//@forward 'usa-tag';
+@forward 'usa-tooltip';
+@import "uswds-theme-gsa-color";
+@import "custom/gsa-mixins";
+
+// -------------------------------------
+body.route--add .field--name-body .ck.ck-content,
+body.route--edit .field--name-body .ck.ck-content {
+  @import "extends/usa-button";
+  /* Specify placement of global rules for body only */
+  @import "uswds-global";
+  /* -- */
+
+  font-family: "Source Sans Pro", "Lucida Grande", sans-serif;
+  line-height: 1.15;
+  color: #1b1b1b;
+
+  &.ck-blurred {
+    div.ck-widget_selected {
+      outline-color: transparent;
+    }
+  }
+  &.ck-show-blocks {
+    p {
+      padding-top: inherit;
+    }
+    [id^="resp_img_"].ck-widget {
+      outline: 1px dashed var(--ck-show-blocks-border-color);
+      background: white;
+    }
+  }
+  .usa-radio {
+    .html-object-embed.ck-widget {
+      position: absolute;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .usa-radio__label {
+    display: inline;
+    margin-left: 13px;
+  }
+  .html-object-embed.ck-widget {
+    font-size: revert;
+    padding: 0;
+    display: revert;
+    background: transparent;
+    outline: none;
+    &::before {
+      display: none;
+    }
+  }
+  fieldset:not(.fieldgroup) > legend {
+    position: inherit;
+  }
+  .table.usa-table--borderless table {
+    border: none;
+  }
+  h2,h3,h4,h5,h6 {
+    padding: revert;
+  }
+  .usa-card-group, .usa-prose {
+    list-style-type: none;
+  }
+}
+body.path-node .field--name-body {
+  @import "custom/tables";
+  @import "custom/gsa-mixins";
+  @import "custom/globals";
+  @import "custom/size-mixins";
+  @import "custom/image-sizes";
+  @import "extends/mixins";
+  @import "extends/table";
+  @import "extends/table_extends";
+  @import "extends/usa-button";
+  @import "custom/content-iframe-sizing";
+  @import "custom/theme-icons";
+
+  font-family: "Source Sans Pro", "Lucida Grande", sans-serif;
+  line-height: 1.15;
+  color: #1b1b1b;
+
+  @include linkUI;
+  .usa-table {
+    margin: 0;
+  }
+  .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody {
+    border-bottom: none
+  }
+  .img-responsive {
+    width:100%;
+  }
+  /* Image Caption Field within ckeditor*/
+  .img-caption {
+    font-size: 11px;
+    color: black;
+    padding: 15px 15px 15px 20px;
+  }
+}
+.field--name-body .field__item {
+  display: table;
+}
+table[class*="cke_show_border"]:not(.usa-table--borderless) {
+  width: 100%;
+  th, td, th {
+    border: 1px solid #1b1b1b !important;
+  }
+}
+a:focus, [contentEditable=true]:focus, [href]:focus, [tabindex]:focus, iframe:focus {
+  outline: none !important;
+}
+
+body.ck-content img.cke_anchor{
+  display: inline-block !important;
+}

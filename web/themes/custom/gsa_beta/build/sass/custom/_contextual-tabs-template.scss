@@ -1,0 +1,77 @@
+#article-template-tabs.has_sidebar {
+  .contextual-tabs--template {
+    display: flex;
+  }
+}
+.contextual-tabs--template {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 19px auto 20px;
+  *:focus, input:focus + label {
+    @include focus-outline();
+  }
+  // Tabbing of content with css only using
+  // radio buttons and '+' to target next container
+  > .tab--label:nth-child(2) {
+    @include at-media(tablet){
+      margin-left: 21px;
+    }
+  }
+  .tab--radio {
+    opacity: 0;
+    position: absolute;
+    &:checked + .tab--label {
+      @include u-border-bottom(solid, primary);
+      margin-bottom: 0px;
+      border-width: 3px;
+    }
+
+    &:checked + .tab--label + .tab-content {
+      //display: block;
+      height: auto;opacity: 1;
+      z-index: 1;
+      visibility: visible;
+    }
+  }
+
+  .tab-content {
+    width: 100%;
+    @include u-border-top(1px, solid, base-lighter);
+    //display: none;
+    height: 0;
+    opacity: 0;
+    z-index: 0;
+    overflow:hidden;
+    visibility: hidden;
+    width: 100%;
+    order: 99;
+    p:first-of-type {
+      padding-top: 34px;
+    }
+    &:first-child {
+      //display:block;
+      height: auto;
+      opacity: 1;
+    }
+    > div.contextual-region {
+      padding-top:2.4em;
+    }
+  }
+
+  .tab--label {
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 20px;
+    min-height: 40px;
+    white-space: nowrap;
+    text-align: center;
+
+    &:hover,
+    &:active {
+      @include u-border-bottom(solid, primary);
+      border-width: 3px;
+      cursor: pointer;
+      margin-bottom: 0px;
+    }
+  }
+}

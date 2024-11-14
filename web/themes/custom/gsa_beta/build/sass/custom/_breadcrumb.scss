@@ -1,0 +1,33 @@
+.region-breadcrumb {
+  padding: 1.3rem 0 1.2rem;
+  font-size: .95rem;
+  transition: padding .2s ease-in-out;
+  display: none;
+  @include at-media($theme-header-min-width) {
+    display:block;
+  }
+  ol.uswds-breadcrumbs li a {
+    color: $gsa-primary;
+    text-decoration: none;
+    &:visited {
+      color: $gsa-primary;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  ol.uswds-breadcrumbs li:not(:last-child):after {
+    content: "";
+    bottom: -0.2em;
+    margin-left: 0;
+    margin-right: 0;
+    height: 2ex;
+    width: 2ex;
+    position: relative;
+    vertical-align: baseline;
+    display: inline-block;
+    background-size: 14px;
+    left: 5px;
+    @include add-background-svg('usa-icons/navigate_next')
+  }
+}

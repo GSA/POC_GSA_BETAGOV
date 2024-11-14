@@ -1,0 +1,12 @@
+.template-featured-microsite {
+  .grid-container {
+padding: 0;
+    @include at-media(tablet) {
+          padding-left: 1rem;
+    padding-right: 1rem;
+    }
+    @include at-media(widescreen) {
+      @include grid-container();
+    }
+  }
+}

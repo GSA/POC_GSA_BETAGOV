@@ -1,0 +1,17 @@
+.view-sitemap {
+  .view-content {
+    @include grid-row();
+    @include grid-gap();
+    > .item-list {
+      ul {
+        @include list-reset();
+      }
+      @include at-media(tablet){
+        @include grid-col(6);
+      }
+      @include at-media(desktop){
+        @include grid-col(4);
+      }
+    }
+  }
+}

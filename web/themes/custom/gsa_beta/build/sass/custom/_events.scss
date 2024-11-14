@@ -1,0 +1,68 @@
+.gsa-events-page-contents {
+
+  .usa-form .usa-input,
+  .usa-form .usa-range,
+  .usa-form .usa-select,
+  .usa-form .usa-textarea {
+    max-width: 380px;
+  }
+
+  .views-exposed-form .form-actions {
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+    [type="submit"] {
+      border-bottom-left-radius: .25rem;
+      border-top-left-radius: .25rem;
+      padding: .75rem 1.25rem;
+      width: auto;
+    }
+  }
+
+  h1 {
+    margin-bottom: 40px;
+  }
+}
+//
+//.block-content,
+//.gsa-insite-homepage-region,
+//.region-content.region .node-content {
+//  background-color: #fff;
+//  padding: 1.5rem;
+//  padding-left: 0;
+//  padding-right: 0;
+//  margin-bottom: 1.5rem;
+//  min-height: 15rem;
+//}
+//
+//.usa-logo__text {
+//  float: left;
+//  padding: 10px 0 3px 20px;
+//  font-style: normal;
+//  font-weight: 400;
+//}
+//
+//.usa-logo {
+//  flex: 1 1 0%;
+//  font-size: .93rem;
+//  line-height: .9;
+//  margin-left: 0rem;
+//}
+
+@media only screen and (min-width: 1024px) {
+
+  //.block-content,
+  //.gsa-insite-homepage-region {
+  //  background-color: #fff;
+  //  padding: 1.5rem;
+  //  margin-bottom: 1.5rem;
+  //  min-height: 15rem;
+  //}
+  //
+  //.usa-logo__text {
+  //  float: left;
+  //  padding: 19px 0 3px 24px;
+  //  font-style: normal;
+  //  font-weight: 400;
+  //}
+}

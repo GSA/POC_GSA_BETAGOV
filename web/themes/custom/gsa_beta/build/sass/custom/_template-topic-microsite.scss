@@ -1,0 +1,6 @@
+#template-topic-microsite {
+  .block_location--bottom,
+  .block-content  {
+    @include u-margin-top(3);
+  }
+}

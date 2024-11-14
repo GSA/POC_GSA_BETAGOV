@@ -1,0 +1,114 @@
+/*
+  Info block theming
+ */
+#insite-body {
+  > .body_content--sidebar-column {
+    @include at-media(tablet-lg){
+      float:right;
+      @include u-margin-left(2);
+    }
+    @include at-media(desktop){
+      @include u-width('mobile');
+      @include u-padding-left(2);
+    }
+  }
+  .block_location--top:last-child {
+    border-bottom: 1px solid;
+  }
+}
+// Image size 'fixed size' should not float. layout issue
+body.page-node-type-news-product {
+  &.block-location-right {
+    article .usa-fixed {
+      float: none;
+    }
+  }
+}
+
+#article-template-standard {
+  .body_content--sidebar-column {
+    button.usa-accordion__button {
+      position: absolute;
+      width: 35px;
+      height: 57px;
+      right: 17px;
+      display: block;
+      @include at-media(tablet){
+        display:none;
+      }
+    }
+  }
+  .block_location--right {
+    &[hidden] {
+      article div.text-block__content {
+        display:none;
+        @include at-media(tablet){
+          display: block;
+        }
+      }
+    }
+  }
+}
+#template-topic-microsite,
+#template-featured-microsite {
+  .block_location--bottom {
+    @include at-media(tablet-lg){
+      min-height: 23rem;
+    }
+    h2 {
+      margin-top: 0px;
+      @include u-border-color('base-lighter');
+      @include u-border-bottom(1px);
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+div[class^=block_location--] {
+  &:last-child {
+    @include u-margin-bottom(3);
+  }
+  @include grid-row();
+  @include u-bg('base-lightest');
+  @include u-margin-bottom(1);
+  padding: 15px 15px 3px;
+  @include at-media(desktop){
+    @include u-margin-bottom(3);
+    @include u-padding(15px);
+  }
+  article {
+    @include grid-col();
+  }
+  ul {
+    padding: 0 5px 8px 18px;
+    margin: 0;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  address {
+    @include u-margin-bottom(2);
+    a {
+      @include u-font-weight(bold)
+    }
+  }
+  .usa-icon {
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  button {
+    padding-left: 88%;
+  }
+
+  h2 {
+    margin-top: 0px;
+    @include u-font('sans','sm');
+    @include at-media(desktop){
+      @include u-border-bottom(1px);
+      @include u-border-color('base-lighter');
+      padding-bottom: 10px;
+    }
+  }
+}
+

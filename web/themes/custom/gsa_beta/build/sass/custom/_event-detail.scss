@@ -1,0 +1,35 @@
+body.page-node-type-event{
+  .event__summary{
+    //margin: 2.5em 0 4em 0;
+  }
+  .usa__event-body {
+    margin-top: 1.5rem;
+    display: flow-root;
+  }
+  .event__sidebar{
+    margin-top: 2.5em;
+    .usa-button{
+      width: 100%;
+      text-decoration: underline;
+    }
+    #addToCalendar {
+      margin-bottom: .5em;
+      .usa-button {
+        text-align: left;
+        color: black;
+      }
+    }
+    .usa-accordion__content{
+      border: 4px solid #f0f0f0;
+      border-top: none;
+
+    }
+    .event__date{
+      white-space: nowrap;
+
+    }
+    .event__time {
+      clear: left;    margin-top: 18px;    margin-bottom: 17px;
+    }
+  }
+}

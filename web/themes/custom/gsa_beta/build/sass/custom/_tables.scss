@@ -1,0 +1,507 @@
+@use "uswds-core" as *;
+
+// Styling for some data tables but mostly all tables
+table {
+  &:not([class^=usa-table]) {
+    @include usa-table;
+  }
+  #view-field-release-date-table-column {
+    width: 113px;
+  }
+}
+.view-events {
+  .views-field-field-start-end-date {
+    @include at-media(desktop){
+      width: 25%;
+    }
+  }
+}
+.view-events .views-field-field-start-end-date {
+  > .datetime {
+    //display: block;
+  }
+  span.smart-date--date, span.smart-date--time {
+    display: inline-flex;
+    > time.datetime:first-child {
+      padding: 0 5px 0 0;
+    }
+    &:nth-child(2) > time.datetime:last-child {
+      padding: 0 0 0 5px;
+    }
+  }
+}
+table:not(.usa-date-picker__calendar__table):not(.usa-table--borderless):not(.usa-table):not(.perdiem_results):not(#edit-table) {
+  border-collapse: collapse;
+  font-size: inherit;
+  border-color: color($theme-table-border-color);
+  width: 100%;
+  @include border-box-sizing;
+  @include typeset;
+  border-spacing: 0;
+  margin: units(2.5) 0;
+
+  td {
+    &.odd {
+      background-color: #F4F7FB !important;
+    }
+
+    &.even {
+      background-color: #e7ebf7 !important;
+    }
+  }
+
+  &.table-responsive {
+    border-collapse: collapse;
+    border: 1px solid;
+
+    th,
+    td {
+      padding: 0.5em !important;
+      border: none !important;
+    }
+  }
+
+  &.dataTable {
+    border-collapse: collapse;
+    margin: 0 0;
+  }
+
+  &.dataTable thead th,
+  .dataTable thead td {
+    border-bottom: none !important;
+  }
+
+  &.dataTable > tbody > tr.child span.dtr-title {
+    min-width: 159px;
+  }
+
+  &.dataTable > tbody > tr.child ul.dtr-details > li {
+    margin-left: 40px;
+    font-weight: normal;
+  }
+
+  &.dataTable > tbody > tr.child ul.dtr-details {
+    width: 100%;
+  }
+
+  &.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child {
+    padding-left: 45px !important;
+  }
+
+  &.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before,
+  &.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before {
+    background-color: #b6c4d1;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #616161;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    top: inherit;
+    color: black;
+  }
+  &.views-table,
+  &.stripedTable {
+    tbody {
+      tr:nth-child(odd) {
+        td,
+        th {
+          background-color: color($theme-color-base-lightest);
+          color: color($theme-color-base-darkest);
+        }
+      }
+    }
+  }
+
+  caption {
+    padding-top: 20px;
+    color: #333;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  //th {
+  //  text-align: left;
+  //}
+  td {
+    @include u-border(1px, 'base-dark');
+    //background-color: color('white');
+    font-weight: $theme-font-weight-normal;
+    padding: units(1) units(2);
+  }
+
+  caption {
+    @include u-font('serif', 'xs');
+    font-weight: $theme-font-weight-bold;
+    margin-bottom: units(1.5);
+    text-align: left;
+  }
+
+  .event-location {
+    font-style: italic;
+  }
+
+  #view-field-state-table-column {
+    white-space: nowrap;
+  }
+
+  #view-field-start-end-date-table-column {
+    width: 25%;
+  }
+
+  #view-field-release-date-table-column {
+    width: 130px;
+  }
+}
+.dataTables_scrollBody .scrollTable,
+.dataTables_scrollBody .scrollTable_search {
+  thead tr {
+    overflow: hidden;
+    height: 0;
+
+    th {
+      padding-top: 0 !important;
+      padding-bottom: 0!important;
+    }
+  }
+}
+
+.dataTables_wrapper {
+  margin-bottom: 20px;
+
+  .dataTables_scrollFoot {
+    //display: none;
+  }
+
+  .dataTables_filter {
+    position: relative;
+  }
+
+  table {
+    th,td {
+      box-sizing: inherit;
+    }
+    tr th.sorting.sorting_asc {
+      @include add-background-svg('material-icons/arrow_upward');
+      background-size: 16px;
+    }
+
+    tr th.sorting.sorting_desc {
+      @include add-background-svg('material-icons/arrow_downward');
+      background-size: 16px;
+    }
+
+    tr th.sorting {
+      @include add-background-svg('uswds-icons/sort_arrow');
+      background-size: 24px;
+    }
+
+    th.sorting_asc, th.sorting_desc {
+      background-color: color($theme-table-sorted-header-background-color) !important;
+    }
+
+    th.sorting_1,
+    td.sorting_1 {
+      background-color: color($theme-table-sorted-background-color) !important;
+      color: $table-sorted-text-color;
+    }
+  }
+
+  .dataTables_scroll {
+    .dataTables_scrollHeadInner {
+      box-sizing: border-box !important;
+
+      table {
+        tr th.sorting {
+          padding: .5rem 1rem!important
+        }
+      }
+    }
+
+    .dataTables_scrollHead {
+
+    }
+
+    + .dataTables_info {
+      position: relative;
+      padding-bottom: 0;
+      padding-top: 15px;
+    }
+  }
+
+  .paging_simple_numbers, .dataTables_info {
+    background-color: color($theme-table-header-background-color);
+    border-top: none !important;
+    border: 1px solid #111;
+    padding: 10px 0 15px 10px;
+    @include u-width(full);
+
+  }
+}
+
+.dataTables_wrapper {
+  // background: $color-boxed-text;
+  .dataTables_info {
+    background: none;
+    border: none;
+    width: auto;
+  }
+
+  .paging_simple_numbers {
+    text-align: center;
+    width: 100%;
+    margin-bottom: -24px;
+    margin-top: 0;
+    height: 80px;
+
+  }
+
+  .dataTables_paginate a {
+    background: #fff;
+    border-radius: 0;
+    padding: 5px 3% 5px;
+    margin-left: 0;
+  }
+
+  @media (min-width: 991px) {
+    .dataTables_paginate {
+      padding: 10px;
+      margin-bottom: 0;
+      height: 56px;
+
+      a {
+        padding: 5px 30px 5px;
+
+        &.current {
+          //background: $gsa-primary-dark-color;
+          color: white !important;
+          font-weight: bold;
+        }
+
+        &.current,
+        &:hover {
+          background: #205493;
+          border-color: #205493;
+        }
+      }
+    }
+  }
+  .dataTables_info:has(+ .dataTables_paginate) {
+    position: relative;
+    left: -10px;
+    bottom: -41px;
+    @include at-media(desktop) {
+      position: absolute;
+    }
+  }
+}
+
+.dataTables_length {
+  padding: 15px 0;
+}
+
+.dataTables_length label {
+  width: 185px
+}
+
+.dataTables_length label select {
+  width: 100px !important;
+  margin-top: -3px;
+}
+
+div.dt-buttons {
+  float: none;
+  text-align: left;
+
+  button.dt-button {
+    overflow: hidden;
+    border: none;
+    text-indent: -9990px;
+    height: 20px;
+    width: 33px;
+    padding: 18px;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: 28px !important;
+    /* width: 100%; */
+  }
+}
+
+.dt-buttons button {
+  background-color: white !important;
+  border-radius: 20px;
+}
+
+.dt-buttons button span {
+  position: absolute;
+  top: 6px;
+  font-weight: bold;
+}
+
+.buttons-csv {
+  background: linear-gradient(transparent, transparent), 9px 7px/60% no-repeat url("/sites/gsa.gov/templates/resources/images/download-data.svg") !important;
+  margin-right: 55px;
+}
+
+.buttons-csv,
+.buttons-print {
+  top: 0;
+  left: 33px;
+  text-indent: 22px;
+  overflow: visible;
+  /* width: 100%; */
+  margin-bottom: 10px;
+}
+
+.buttons-print {
+  background: linear-gradient(transparent, transparent), 7px 7px/63% no-repeat url("/sites/gsa.gov/templates/resources/images/print-data.svg") !important;
+}
+
+@media screen and (min-width: 640px) {
+  .buttons-csv,
+  .buttons-print {
+    top: -10px;
+
+  }
+  #perdiem-meals-breakdown_wrapper .buttons-print,
+  #perdiem-meals-breakdown_wrapper .buttons-csv {
+    top: -8px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .dt-buttons {
+    float: right;
+    position: absolute;
+    right: 41px;
+    top: 0;
+    z-index: 1;
+  }
+  .buttons-csv,
+  .buttons-print {
+    top: -110px;
+    overflow: hidden;
+    margin-right: 0;
+    text-indent: -9999px;
+  }
+  #perdiem-meals-breakdown_wrapper .buttons-print,
+  #perdiem-meals-breakdown_wrapper .buttons-csv {
+    top: -201px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #perdiem-meals-breakdown_wrapper .buttons-print,
+  #perdiem-meals-breakdown_wrapper .buttons-csv {
+    top: -199px;
+  }
+}
+
+.table_perdiem > caption {
+  display: none;
+}
+
+.dataTables_filter input { /* height: 32px; */
+  height: 27px;
+  top: 3px;
+  right: 0;
+  padding: 9px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #1d0d0d;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.dataTables_filter input {
+  z-index: 5;
+  position: relative;
+  margin: 0 10px 10px 0;
+}
+
+table:not(.scrollTable):not(.usa-table--borderless) {
+  &.dataTable {
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-top: none;
+
+    th, td {
+      //padding: .5em 1rem .5em 1em!important;
+      //border: none !important;
+    }
+  }
+}
+
+table {
+  &.dataTable {
+    border-collapse: collapse;
+  }
+  &.dataTable:not(.usa-table--borderless) {
+    //border: 1px solid black;
+  }
+
+  &.table.dataTable thead th, table.dataTable thead td {
+    border: none !important;
+  }
+
+  &#perdiem-meals-breakdown thead th:nth-child(8) {
+    min-width: 85px;
+  }
+
+  &.dataTable > tbody > tr.child span.dtr-title {
+    min-width: 159px;
+  }
+
+  &.dataTable > tbody > tr.child ul.dtr-details > li {
+    margin-left: 40px;
+    font-weight: normal;
+  }
+
+  &.dataTable > tbody > tr.child ul.dtr-details {
+    width: 100%;
+  }
+
+  &.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child {
+    padding-left: 45px !important;
+  }
+
+  &.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before, &.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before {
+    background-color: #b6c4d1;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #616161;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    top: inherit;
+    color: black;
+  }
+}
+
+.dataTables_scrollBody {
+  border-bottom: 1px solid $gsa-primary-lighter;
+  margin-top: -2px;
+
+  table.scrollTable {
+    th {
+      padding: 0;
+    }
+  }
+}
+
+page:not(.path-travel) {
+  table {
+    td {
+      vertical-align: top !important;
+    }
+  }
+}

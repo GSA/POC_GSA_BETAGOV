@@ -1,0 +1,59 @@
+@use "uswds-core" as *;
+@mixin gsa_image-init(){
+  position: relative;
+  min-height: 1px;
+  padding-left: 25px;
+  padding-right: 25px;
+  float: left;
+  display: inline-flex;
+  flex-wrap: wrap;
+  &.padding-right-0,
+  &.padding-left-0 {
+    padding-bottom: 25px;
+  }
+  a {
+    width: 100%;
+  }
+}
+@mixin gsa_small--image(){
+  width: 50%;
+  img {
+    @include gsa_full--image
+  }
+  @include at-media(tablet){
+    width: 33%;
+  }
+  @include at-media(tablet-lg){
+    width: 41%;
+  }
+  @include at-media(desktop-lg){
+    width: 25%;
+  }
+}
+@mixin gsa_medium--image() {
+  width: 66%;
+  img {
+    @include gsa_full--image
+  }
+  @include at-media(desktop){
+    width: 58%;
+  }
+  @include at-media(desktop-lg){
+    width: 50%;
+  }
+}
+@mixin gsa_large--image() {
+  width: 100%;
+  img {
+    @include gsa_full--image
+  }
+  @include at-media(desktop){
+    width: 75%;
+  }
+  @include at-media(desktop-lg){
+    width: 75%;
+  }
+}
+@mixin gsa_full--image(){
+  width: 100%;
+}

@@ -1,0 +1,137 @@
+.insite-grid-container {
+  @include at-media(desktop){
+    @include grid-container();
+  }
+  .node-content {
+    @include at-media-max(desktop){
+      @include u-padding-x(2);
+    }
+  }
+}
+main#main-content{
+  //overflow-x: hidden;
+}
+
+.gsa-insite-homepage-region,
+.node-content,
+.block-content {
+  @include u-bg('white');
+  margin-bottom: 0;
+  min-height: 15rem;
+  @include at-media(desktop){
+    @include u-border('1px','solid','base-lighter');
+  }
+  p:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  a.usa-button {
+    text-decoration: none;
+    &:hover {
+      //color: $gsa-primary;
+      text-decoration: underline;
+    }
+  }
+  a {
+    text-decoration: underline;
+  }
+  .has_sidebar {
+    h2, h3, h4, h5 {
+      clear:left;
+    }
+    .clearboth {
+      //display: inline-flex;
+    }
+  }
+}
+.block-content {
+  @include u-padding-bottom(10);
+  @include u-padding(2);
+
+  @include at-media(desktop){
+    @include u-padding(3);
+  }
+}
+.node-content {
+  @include u-padding-bottom(10);
+  @include u-padding(0);
+  @include u-padding-top(2);
+  @include at-media(desktop){
+    @include u-padding(3);
+  }
+  .article_body {
+    //padding-bottom: 5rem;
+  }
+  //@include grid-row();
+  @include u-display(inline-block);
+  @include u-width(full);
+  > article,
+  > div {
+    @include grid-col();
+  }
+  .article_body .dataTables_wrapper {
+
+  }
+}
+.block-content {
+  h2 {
+    margin-top:0;
+    @include u-padding-bottom(2);
+    @include u-border-bottom(1px, base-lighter, solid);
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.font-sans-sm {
+  color: #1b1b1b !important;
+  line-height: 1.6;
+}
+
+a.usa-zoom-in > .feature-story-headline {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 46.9%;
+  position: relative;
+  color: #fff;
+  font-size: 32px;
+}
+
+a.usa-zoom-in > .story-page-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+a.usa-zoom-in > .feature-story-headline > div {
+  display: block;
+  vertical-align: inherit;
+  line-height: inherit;
+  text-align: center;
+  padding: 0 36px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+a.usa-zoom-in .text-zoom,
+a.usa-zoom-in > .feature-story-headline .text-only {
+  transform: scale(1);
+  transition: all .3s ease-in-out .2s;
+}
+
+a.usa-zoom-in .text-zoom:hover,
+a.usa-zoom-in > .feature-story-headline .text-only:hover {
+  transform: scale(1.1);
+}

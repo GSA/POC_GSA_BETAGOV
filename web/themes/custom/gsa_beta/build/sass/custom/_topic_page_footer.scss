@@ -1,0 +1,20 @@
+.topic_page_footer--container {
+  #content_footer {
+    @include grid-row();
+    @include grid-gap(0);
+
+    .last-reviewed {
+      @include u-float(left);
+      @include u-margin-right(15px);
+    }
+    .print-page .usa-icon {
+      height: 1.5em;
+      width: 1.5em;
+    }
+  }
+}
+.full-container {
+  .topic_page_footer--container {
+    @include grid-container();
+  }
+}

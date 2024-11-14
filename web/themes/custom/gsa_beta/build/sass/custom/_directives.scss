@@ -1,0 +1,71 @@
+.directives_sidebar {
+  margin-top:13px;
+  margin-left: .6rem;
+  padding: 10px 15px;
+}
+.path-directives-library {
+  .node-content {
+    h2 {
+      margin: 20px 0;
+    }
+  }
+  .view-display-id-block_1 {
+    .view-header {
+      display:block;
+    }
+  }
+  .usa-accordion {
+    .usa-accordion__heading {
+      margin: 7px 0;
+    }
+    .usa-accordion__content {
+      padding: 0 units(2.5) calc(#{units(2)} - #{units(0.5)}) units(2.5);
+      .usa-list {
+        margin-top: 0;
+      }
+    }
+  }
+  .block-insite-topic-page-footer {
+    @include grid-container();
+  }
+  .accordion-body {
+    ul {
+      list-style: circle;
+    }
+  }
+  .feature_tabs--area {
+    @include grid-row();
+    margin-bottom: 2.5rem;
+    margin-top: 3rem;
+    ul {
+      @include unstyled-list();
+      @include u-border-bottom(1px, solid, base-lighter);
+      padding-left: 1rem;
+
+      li {
+        a {
+          padding: 5px 15px;
+          display: block
+        }
+        &.usa-current {
+          a {
+            color: black;
+            pointer-events: none;
+          }
+        }
+        &:hover,
+        &.usa-current {
+          @include u-border-bottom(solid, primary);
+        }
+      }
+    }
+  }
+}
+
+.page-node-type-directive{
+  .view-directive-versions {
+    table td.views-field-field-pdf{
+      overflow-wrap: anywhere;
+    }
+  }
+}

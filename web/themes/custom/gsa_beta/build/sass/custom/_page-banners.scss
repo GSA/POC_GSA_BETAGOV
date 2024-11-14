@@ -1,0 +1,79 @@
+.directive-library-template .page-banner,
+.template-featured-microsite .page-banner {
+  padding:0;
+  & > div {
+    background-position: center;
+    background-size: cover;
+    font-size: 1.06rem;
+  }
+}
+.page-banner {
+  @include u-margin-bottom(3);
+  @include u-padding-y(1);
+  @include u-bg(base-lighter);
+  .featured-microsite-banner {
+    line-height: 1.5;
+    color: white;
+    @include u-padding(0);
+
+    @include at-media(tablet){
+      //@include u-padding-x(2);
+      padding:1.95rem 0 1.7rem
+    }
+    @include at-media(desktop){
+      //@include u-padding-x(2);
+    }
+    @include at-media(widescreen){
+      //@include u-padding-x(6);
+    }
+    .usa-page__header,.usa-summary__body {
+      background: rgba(22, 46, 81,1);
+      @include at-media(tablet){
+        background: rgba(22, 46, 81,.7);
+      }
+    }
+    .usa-page__header {
+
+
+      padding: 1.0rem 0 1.5rem 1.5rem;
+      @include at-media(tablet){
+        padding: 1.0rem 5px 1.5rem 1.5rem;
+      }
+
+      h1 {
+        margin: 0;
+      }
+    }
+    .usa-summary__body {
+      padding: .6rem 1.75rem .8rem 1.5rem;
+      display: none;
+      > div {
+        padding: .6rem 1.75rem .8rem 1.5rem;
+        margin: 0;
+      }
+      a {color:white}
+      p {
+          padding:0;
+          margin-top: 8px;
+          margin-bottom: 8px;
+        }
+      @include at-media(tablet){
+        display: block;
+      }
+    }
+  }
+  &.template-name-banner {
+
+  }
+
+  h1 {
+    line-height: 1.15;
+    //letter-spacing: 0.030em;
+  }
+
+}
+
+.has-headline .standard-banner {
+  height: 270px;
+  padding:3.3rem;
+}

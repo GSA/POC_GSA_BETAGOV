@@ -1,0 +1,49 @@
+.gsa-insite-homepage-region {
+  @include u-padding-bottom(10);
+  @include u-padding-y(2);
+  @include u-padding-x(0);
+  @include at-media(desktop){
+    padding: 1.5rem 2.5rem;
+  }
+}
+.story-page-image {
+  overflow: hidden;
+  img {
+    max-width: 100%;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 0.5s;
+    transition: width 2s, height 2s, transform 0.5s;
+  }
+  &:hover img {
+    -webkit-transform:scale(2);
+    -moz-transform:scale(2);
+    -ms-transform:scale(2);
+    -o-transform:scale(2);
+    transform:scale(1.07);
+  }
+}
+.paragraph--type--front-feature-story-block {
+  a {
+    text-decoration: none !important;
+    color: color('ink') !important;
+    &:hover{
+      text-decoration: underline !important;
+    }
+    p {
+      margin-top: 0;
+    }
+    .feature-story-headline {
+      font-size: 32px;
+      &:hover .field__item {
+          -moz-transform: scale(1.3);
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+        }
+    }
+    &.usa-zoom-in {
+      .field__item {
+        transform: scale(1);
+        transition: all .3s ease-in-out .2s;
+      }
+    }
+  }
+}
