@@ -1,0 +1,20 @@
+uuid: 76d19ded-05bb-4001-8280-c175ae9d2f3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_how_to_buy_form_this_contr
+field_name: field_how_to_buy_form_this_contr
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

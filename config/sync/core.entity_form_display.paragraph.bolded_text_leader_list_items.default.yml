@@ -1,0 +1,33 @@
+uuid: 83f035a9-a628-4375-a134-c556d55037c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bolded_text_leader_list_items.field_bold_text_leader
+    - field.field.paragraph.bolded_text_leader_list_items.field_plain_text_following_line
+    - paragraphs.paragraphs_type.bolded_text_leader_list_items
+id: paragraph.bolded_text_leader_list_items.default
+targetEntityType: paragraph
+bundle: bolded_text_leader_list_items
+mode: default
+content:
+  field_bold_text_leader:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_plain_text_following_line:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  layout_paragraphs_fields: true
+  status: true

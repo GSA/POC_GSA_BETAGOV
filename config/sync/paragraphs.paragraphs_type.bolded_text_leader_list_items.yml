@@ -1,0 +1,20 @@
+uuid: ae5be90d-96f7-4bc4-89a8-a597b81fc6e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: bolded_text_leader_list_items
+label: 'Bolded text leader list - items'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      layout_onecol: 'One column'

@@ -1,0 +1,20 @@
+uuid: 0fcb6456-df4f-4883-87b2-942e15c26e48
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: stylized_checkbox_items
+label: 'Stylized Checkbox Items'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      layout_onecol: 'One column'

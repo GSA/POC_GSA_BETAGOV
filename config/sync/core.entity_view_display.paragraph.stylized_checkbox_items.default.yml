@@ -1,0 +1,32 @@
+uuid: bd6b814d-3ffe-4b80-b373-8abbf1502030
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stylized_checkbox_items.field_list_checkbox
+    - field.field.paragraph.stylized_checkbox_items.field_list_test
+    - paragraphs.paragraphs_type.stylized_checkbox_items
+id: paragraph.stylized_checkbox_items.default
+targetEntityType: paragraph
+bundle: stylized_checkbox_items
+mode: default
+content:
+  field_list_checkbox:
+    type: boolean
+    label: hidden
+    settings:
+      format: unicode-yes-no
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_list_test:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

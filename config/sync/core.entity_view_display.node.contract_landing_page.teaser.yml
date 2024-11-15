@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.contract_landing_page.body
+    - field.field.node.contract_landing_page.field_contract_vehicle_name
     - node.type.contract_landing_page
   module:
     - text
@@ -28,4 +29,5 @@ content:
     weight: 100
     region: content
 hidden:
+  field_contract_vehicle_name: true
   node_read_time: true

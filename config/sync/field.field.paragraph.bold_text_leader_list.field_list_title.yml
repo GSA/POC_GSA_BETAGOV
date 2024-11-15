@@ -1,0 +1,19 @@
+uuid: 42ad3997-92a0-4887-a9b6-f75298ffc542
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list_title
+    - paragraphs.paragraphs_type.bold_text_leader_list
+id: paragraph.bold_text_leader_list.field_list_title
+field_name: field_list_title
+entity_type: paragraph
+bundle: bold_text_leader_list
+label: 'List title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,100 @@
+uuid: 99eab039-8f87-416e-9b43-5ea938ebf633
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_checkbox_items
+    - paragraphs.paragraphs_type.stylized_checkbox_items
+    - paragraphs.paragraphs_type.stylized_checkboxes
+  module:
+    - entity_reference_revisions
+id: paragraph.stylized_checkboxes.field_checkbox_items
+field_name: field_checkbox_items
+entity_type: paragraph
+bundle: stylized_checkboxes
+label: 'Checkbox Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      stylized_checkbox_items: stylized_checkbox_items
+    negate: 0
+    target_bundles_drag_drop:
+      contract_landing_page_paragraph:
+        weight: 25
+        enabled: false
+      ept_hero:
+        weight: 26
+        enabled: false
+      from_library:
+        weight: 27
+        enabled: false
+      stylized_checkbox_items:
+        weight: 28
+        enabled: true
+      stylized_checkboxes:
+        weight: 29
+        enabled: false
+      text_field:
+        weight: 30
+        enabled: false
+      uswds_2_column_breakpoints:
+        weight: 31
+        enabled: false
+      uswds_2_columns:
+        weight: 32
+        enabled: false
+      uswds_3_column_breakpoints:
+        weight: 33
+        enabled: false
+      uswds_3_columns:
+        weight: 34
+        enabled: false
+      uswds_accordion:
+        weight: 35
+        enabled: false
+      uswds_accordion_section:
+        weight: 36
+        enabled: false
+      uswds_alert:
+        weight: 37
+        enabled: false
+      uswds_card_breakpoints:
+        weight: 38
+        enabled: false
+      uswds_card_group_flag:
+        weight: 39
+        enabled: false
+      uswds_card_group_regular:
+        weight: 40
+        enabled: false
+      uswds_card_regular:
+        weight: 41
+        enabled: false
+      uswds_cards_flag:
+        weight: 42
+        enabled: false
+      uswds_modal:
+        weight: 43
+        enabled: false
+      uswds_process_item:
+        weight: 44
+        enabled: false
+      uswds_process_list:
+        weight: 45
+        enabled: false
+      uswds_step_indicator_item:
+        weight: 46
+        enabled: false
+      uswds_step_indicator_list:
+        weight: 47
+        enabled: false
+      uswds_summary_box:
+        weight: 48
+        enabled: false
+field_type: entity_reference_revisions

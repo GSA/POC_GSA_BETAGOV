@@ -1,0 +1,106 @@
+uuid: 39963449-3c45-41a9-8ecb-c0a8ea7f7a09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contract_basics
+    - paragraphs.paragraphs_type.bold_text_leader_list
+    - paragraphs.paragraphs_type.contract_landing_page_paragraph
+  module:
+    - entity_reference_revisions
+id: paragraph.contract_landing_page_paragraph.field_contract_basics
+field_name: field_contract_basics
+entity_type: paragraph
+bundle: contract_landing_page_paragraph
+label: 'Contract Basics'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      bold_text_leader_list: bold_text_leader_list
+    negate: 0
+    target_bundles_drag_drop:
+      bold_text_leader_list:
+        weight: 27
+        enabled: true
+      bolded_text_leader_list_items:
+        weight: 28
+        enabled: false
+      contract_landing_page_paragraph:
+        weight: 23
+        enabled: false
+      ept_hero:
+        weight: 24
+        enabled: false
+      from_library:
+        weight: 25
+        enabled: false
+      stylized_checkbox_items:
+        weight: 32
+        enabled: false
+      stylized_checkboxes:
+        weight: 33
+        enabled: false
+      text_field:
+        weight: 26
+        enabled: false
+      uswds_2_column_breakpoints:
+        weight: 27
+        enabled: false
+      uswds_2_columns:
+        weight: 28
+        enabled: false
+      uswds_3_column_breakpoints:
+        weight: 29
+        enabled: false
+      uswds_3_columns:
+        weight: 30
+        enabled: false
+      uswds_accordion:
+        weight: 31
+        enabled: false
+      uswds_accordion_section:
+        weight: 32
+        enabled: false
+      uswds_alert:
+        weight: 33
+        enabled: false
+      uswds_card_breakpoints:
+        weight: 34
+        enabled: false
+      uswds_card_group_flag:
+        weight: 35
+        enabled: false
+      uswds_card_group_regular:
+        weight: 36
+        enabled: false
+      uswds_card_regular:
+        weight: 37
+        enabled: false
+      uswds_cards_flag:
+        weight: 38
+        enabled: false
+      uswds_modal:
+        weight: 39
+        enabled: false
+      uswds_process_item:
+        weight: 40
+        enabled: false
+      uswds_process_list:
+        weight: 41
+        enabled: false
+      uswds_step_indicator_item:
+        weight: 42
+        enabled: false
+      uswds_step_indicator_list:
+        weight: 43
+        enabled: false
+      uswds_summary_box:
+        weight: 44
+        enabled: false
+field_type: entity_reference_revisions

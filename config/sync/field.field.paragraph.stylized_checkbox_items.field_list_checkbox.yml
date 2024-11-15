@@ -1,0 +1,21 @@
+uuid: 057f87bd-817b-449d-9f90-959de58d96bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list_checkbox
+    - paragraphs.paragraphs_type.stylized_checkbox_items
+id: paragraph.stylized_checkbox_items.field_list_checkbox
+field_name: field_list_checkbox
+entity_type: paragraph
+bundle: stylized_checkbox_items
+label: 'List checkbox'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

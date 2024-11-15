@@ -1,0 +1,30 @@
+uuid: f1107c2d-c5a3-4103-8b2d-b6504e68ae42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.stylized_checkbox_collection.field_check_box
+    - taxonomy.vocabulary.stylized_checkbox_collection
+  module:
+    - text
+id: taxonomy_term.stylized_checkbox_collection.default
+targetEntityType: taxonomy_term
+bundle: stylized_checkbox_collection
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_check_box:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

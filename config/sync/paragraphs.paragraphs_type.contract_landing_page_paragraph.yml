@@ -1,0 +1,20 @@
+uuid: 5d22addc-8913-47e4-9d4f-3ba8b8107016
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: contract_landing_page_paragraph
+label: 'Contract Landing Page Paragraph 1 Column'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      layout_onecol: 'One column'

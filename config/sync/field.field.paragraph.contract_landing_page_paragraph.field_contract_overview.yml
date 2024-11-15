@@ -1,0 +1,94 @@
+uuid: 87601043-f56d-4fbe-886c-a272a1023692
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contract_overview
+    - paragraphs.paragraphs_type.contract_landing_page_paragraph
+    - paragraphs.paragraphs_type.text_field
+  module:
+    - entity_reference_revisions
+id: paragraph.contract_landing_page_paragraph.field_contract_overview
+field_name: field_contract_overview
+entity_type: paragraph
+bundle: contract_landing_page_paragraph
+label: 'Contract overview'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_field: text_field
+    negate: 0
+    target_bundles_drag_drop:
+      contract_landing_page_paragraph:
+        weight: 23
+        enabled: false
+      ept_hero:
+        weight: 24
+        enabled: false
+      from_library:
+        weight: 25
+        enabled: false
+      text_field:
+        weight: 26
+        enabled: true
+      uswds_2_column_breakpoints:
+        weight: 27
+        enabled: false
+      uswds_2_columns:
+        weight: 28
+        enabled: false
+      uswds_3_column_breakpoints:
+        weight: 29
+        enabled: false
+      uswds_3_columns:
+        weight: 30
+        enabled: false
+      uswds_accordion:
+        weight: 31
+        enabled: false
+      uswds_accordion_section:
+        weight: 32
+        enabled: false
+      uswds_alert:
+        weight: 33
+        enabled: false
+      uswds_card_breakpoints:
+        weight: 34
+        enabled: false
+      uswds_card_group_flag:
+        weight: 35
+        enabled: false
+      uswds_card_group_regular:
+        weight: 36
+        enabled: false
+      uswds_card_regular:
+        weight: 37
+        enabled: false
+      uswds_cards_flag:
+        weight: 38
+        enabled: false
+      uswds_modal:
+        weight: 39
+        enabled: false
+      uswds_process_item:
+        weight: 40
+        enabled: false
+      uswds_process_list:
+        weight: 41
+        enabled: false
+      uswds_step_indicator_item:
+        weight: 42
+        enabled: false
+      uswds_step_indicator_list:
+        weight: 43
+        enabled: false
+      uswds_summary_box:
+        weight: 44
+        enabled: false
+field_type: entity_reference_revisions

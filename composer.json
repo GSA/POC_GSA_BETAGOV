@@ -27,6 +27,7 @@
         "drupal/entity_browser": "^2.11",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/ept_hero": "^1.4",
+        "drupal/inline_entity_form": "^3.0@RC",
         "drupal/layout_paragraphs": "^2.1",
         "drupal/masquerade": "^2.0",
         "drupal/node_read_time": "^1.15",

@@ -1,0 +1,9 @@
+uuid: dacafffa-3ef6-4cab-b972-96aafd57a1e1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Styled Checkboxes'
+vid: styled_checkboxes
+description: 'Used in the stylized fields paragraph'
+weight: 0
+new_revision: false

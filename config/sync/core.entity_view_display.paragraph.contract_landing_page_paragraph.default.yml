@@ -1,0 +1,74 @@
+uuid: 62b15c88-30cb-4deb-88b6-ef4601b831d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contract_landing_page_paragraph.field_contact_us
+    - field.field.paragraph.contract_landing_page_paragraph.field_contract_basics
+    - field.field.paragraph.contract_landing_page_paragraph.field_contract_overview
+    - field.field.paragraph.contract_landing_page_paragraph.field_how_to_buy_form_this_contr
+    - field.field.paragraph.contract_landing_page_paragraph.field_is_this_contract_right_for
+    - field.field.paragraph.contract_landing_page_paragraph.field_product_services_categorie
+    - paragraphs.paragraphs_type.contract_landing_page_paragraph
+  module:
+    - entity_reference_revisions
+id: paragraph.contract_landing_page_paragraph.default
+targetEntityType: paragraph
+bundle: contract_landing_page_paragraph
+mode: default
+content:
+  field_contact_us:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_contract_basics:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_contract_overview:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_how_to_buy_form_this_contr:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_is_this_contract_right_for:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_product_services_categorie:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

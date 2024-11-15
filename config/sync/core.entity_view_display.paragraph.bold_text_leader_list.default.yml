@@ -1,0 +1,33 @@
+uuid: 12965b4b-bede-49cf-bfa3-245a8d01cf82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bold_text_leader_list.field_bold_text_leader_collectio
+    - field.field.paragraph.bold_text_leader_list.field_list_title
+    - paragraphs.paragraphs_type.bold_text_leader_list
+  module:
+    - entity_reference_revisions
+id: paragraph.bold_text_leader_list.default
+targetEntityType: paragraph
+bundle: bold_text_leader_list
+mode: default
+content:
+  field_bold_text_leader_collectio:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_list_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

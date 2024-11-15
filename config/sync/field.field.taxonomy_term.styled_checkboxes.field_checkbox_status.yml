@@ -1,0 +1,21 @@
+uuid: f7dc4de4-ee95-4381-91f5-aab12255d9dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_checkbox_status
+    - taxonomy.vocabulary.styled_checkboxes
+id: taxonomy_term.styled_checkboxes.field_checkbox_status
+field_name: field_checkbox_status
+entity_type: taxonomy_term
+bundle: styled_checkboxes
+label: 'Checkbox status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

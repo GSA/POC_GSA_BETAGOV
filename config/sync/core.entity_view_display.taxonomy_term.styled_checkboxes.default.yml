@@ -1,0 +1,33 @@
+uuid: bb14a3a8-a950-4c92-81a1-4b20c7e41a76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.styled_checkboxes.field_checkbox_status
+    - field.field.taxonomy_term.styled_checkboxes.field_checkbox_text
+    - taxonomy.vocabulary.styled_checkboxes
+id: taxonomy_term.styled_checkboxes.default
+targetEntityType: taxonomy_term
+bundle: styled_checkboxes
+mode: default
+content:
+  field_checkbox_status:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_checkbox_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  description: true

@@ -1,0 +1,33 @@
+uuid: 279fd735-49e8-4296-a33f-0a4bbdfa6266
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stylized_checkboxes.field_checkbox_items
+    - field.field.paragraph.stylized_checkboxes.field_checkbox_list_title
+    - paragraphs.paragraphs_type.stylized_checkboxes
+  module:
+    - entity_reference_revisions
+id: paragraph.stylized_checkboxes.default
+targetEntityType: paragraph
+bundle: stylized_checkboxes
+mode: default
+content:
+  field_checkbox_items:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_checkbox_list_title:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

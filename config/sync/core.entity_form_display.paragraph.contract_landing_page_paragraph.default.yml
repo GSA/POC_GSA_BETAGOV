@@ -1,0 +1,127 @@
+uuid: c619a15e-7075-4fce-a81c-cade35712dbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contract_landing_page_paragraph.field_contact_us
+    - field.field.paragraph.contract_landing_page_paragraph.field_contract_basics
+    - field.field.paragraph.contract_landing_page_paragraph.field_contract_overview
+    - field.field.paragraph.contract_landing_page_paragraph.field_how_to_buy_form_this_contr
+    - field.field.paragraph.contract_landing_page_paragraph.field_is_this_contract_right_for
+    - field.field.paragraph.contract_landing_page_paragraph.field_product_services_categorie
+    - paragraphs.paragraphs_type.contract_landing_page_paragraph
+  module:
+    - paragraphs
+id: paragraph.contract_landing_page_paragraph.default
+targetEntityType: paragraph
+bundle: contract_landing_page_paragraph
+mode: default
+content:
+  field_contact_us:
+    type: entity_reference_autocomplete
+    weight: -194
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_contract_basics:
+    type: paragraphs
+    weight: -198
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_contract_overview:
+    type: paragraphs
+    weight: -199
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_how_to_buy_form_this_contr:
+    type: paragraphs
+    weight: -195
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_is_this_contract_right_for:
+    type: paragraphs
+    weight: -197
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_product_services_categorie:
+    type: paragraphs
+    weight: -196
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  layout_paragraphs_fields:
+    weight: -200
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

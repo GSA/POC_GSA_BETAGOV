@@ -1,0 +1,19 @@
+uuid: 6dacbd9c-8e96-4148-a813-2e6d54fd1b8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_plain_text_following_line
+    - paragraphs.paragraphs_type.bolded_text_leader_list_items
+id: paragraph.bolded_text_leader_list_items.field_plain_text_following_line
+field_name: field_plain_text_following_line
+entity_type: paragraph
+bundle: bolded_text_leader_list_items
+label: 'Plain text following line'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

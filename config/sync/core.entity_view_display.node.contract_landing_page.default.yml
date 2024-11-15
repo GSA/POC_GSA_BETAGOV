@@ -4,26 +4,30 @@ status: true
 dependencies:
   config:
     - field.field.node.contract_landing_page.body
+    - field.field.node.contract_landing_page.field_contract_vehicle_name
     - node.type.contract_landing_page
   module:
-    - text
+    - entity_reference_revisions
     - user
 id: node.contract_landing_page.default
 targetEntityType: node
 bundle: contract_landing_page
 mode: default
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
+  field_contract_vehicle_name:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  body: true
   node_read_time: true

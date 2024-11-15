@@ -1,0 +1,29 @@
+uuid: 00721b2d-6b53-4e1d-ba01-44e6172e942d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_check_box
+    - taxonomy.vocabulary.styled_checkboxes
+    - taxonomy.vocabulary.stylized_checkbox_collection
+id: taxonomy_term.stylized_checkbox_collection.field_check_box
+field_name: field_check_box
+entity_type: taxonomy_term
+bundle: stylized_checkbox_collection
+label: Checkbox
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      styled_checkboxes: styled_checkboxes
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

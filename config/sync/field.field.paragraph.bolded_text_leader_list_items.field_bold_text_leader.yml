@@ -1,0 +1,19 @@
+uuid: 5a2fcb58-670c-43e0-96ce-31eab6b69d23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bold_text_leader
+    - paragraphs.paragraphs_type.bolded_text_leader_list_items
+id: paragraph.bolded_text_leader_list_items.field_bold_text_leader
+field_name: field_bold_text_leader
+entity_type: paragraph
+bundle: bolded_text_leader_list_items
+label: 'Bold text leader'
+description: 'A colon ":" will automatically be placed after this text, please do not add it yourself'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

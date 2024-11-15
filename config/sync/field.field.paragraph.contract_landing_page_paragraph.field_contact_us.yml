@@ -1,0 +1,29 @@
+uuid: 766bbdd1-3e0a-4ce0-bf69-762981f49154
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_us
+    - paragraphs.paragraphs_type.contract_landing_page_paragraph
+    - taxonomy.vocabulary.gsa_contact_associations
+id: paragraph.contract_landing_page_paragraph.field_contact_us
+field_name: field_contact_us
+entity_type: paragraph
+bundle: contract_landing_page_paragraph
+label: 'Contact Us'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gsa_contact_associations: gsa_contact_associations
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

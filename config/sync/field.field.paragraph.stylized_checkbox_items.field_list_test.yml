@@ -1,0 +1,19 @@
+uuid: e9b262e0-eabc-42b2-8c9d-c231c7041715
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list_test
+    - paragraphs.paragraphs_type.stylized_checkbox_items
+id: paragraph.stylized_checkbox_items.field_list_test
+field_name: field_list_test
+entity_type: paragraph
+bundle: stylized_checkbox_items
+label: 'List Text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

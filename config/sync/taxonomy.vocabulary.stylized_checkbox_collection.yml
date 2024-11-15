@@ -1,0 +1,9 @@
+uuid: ee35ed9a-e2a8-4d03-908b-2008ad4fc181
+langcode: en
+status: true
+dependencies: {  }
+name: 'Stylized checkbox collection'
+vid: stylized_checkbox_collection
+description: null
+weight: 0
+new_revision: false

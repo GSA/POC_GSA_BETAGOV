@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_paragraph
     - node.type.landing_page
+    - paragraphs.paragraphs_type.stylized_checkboxes
     - paragraphs.paragraphs_type.text_field
     - paragraphs.paragraphs_type.uswds_2_columns
     - paragraphs.paragraphs_type.uswds_3_columns
@@ -36,6 +37,7 @@ settings:
       uswds_2_columns: uswds_2_columns
       uswds_3_columns: uswds_3_columns
       uswds_accordion: uswds_accordion
+      stylized_checkboxes: stylized_checkboxes
       uswds_alert: uswds_alert
       uswds_card_group_flag: uswds_card_group_flag
       uswds_card_group_regular: uswds_card_group_regular
@@ -45,12 +47,21 @@ settings:
       uswds_summary_box: uswds_summary_box
     negate: 0
     target_bundles_drag_drop:
+      contract_landing_page_paragraph:
+        weight: 24
+        enabled: false
       ept_hero:
         weight: 42
         enabled: false
       from_library:
         weight: 22
         enabled: false
+      stylized_checkbox_items:
+        weight: 28
+        enabled: false
+      stylized_checkboxes:
+        weight: 27
+        enabled: true
       text_field:
         weight: 20
         enabled: true
