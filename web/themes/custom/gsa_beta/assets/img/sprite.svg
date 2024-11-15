@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="mail" viewBox="0 0 24 24">
+    <!-- SVG path for mail icon -->
+    <path d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,6v0.01L12,13L4,6.01V6H20z M4,18V8l8,5 l8-5v10H4z"/>
+  </symbol>
+  <symbol id="phone" viewBox="0 0 24 24">
+    <!-- SVG path for phone icon -->
+    <path d="M6.62,10.79C5.06,8.17 4,6.28 4,6.28s2.34-2.07 4.96-0.63c1.3,0.72 2.68,1.91 4.06,3.28c1.37,1.37 2.56,2.76 3.28,4.06 c1.44,2.62-0.63,4.96-0.63,4.96s-1.89-1.06-3.51-2.62"/>
+  </symbol>
+  <!-- Add more symbols as needed -->
+</svg>

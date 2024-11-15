@@ -1,23 +1,19 @@
-<div class="field field--name-field-contact-us field--type-entity-reference field--label-hidden field__item">
-  <div>
-    <h3>Contact us 4</h3>
-    <div class="field field--name-field-contact-paragraph field--type-text-long field--label-hidden field__item">
-      <p>{{ content.group_contact_us.field_contact_paragraph }}</p>
+
+<div class="contact-us">
+  <h3>Contact us</h3>
+  <p class="contact-description">{{ content.group_contact_us.field_contact_paragraph }}</p>
+  <div class="contact-info">
+    <div class="contact-email">
+      <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+        <use xlink:href="/themes/custom/gsa_beta/assets/img/sprite.svg#mail"></use>
+      </svg>
+      <a href="mailto:{{ content.group_contact_us.field_contact_email.0['#title'] }}">{{ content.group_contact_us.field_contact_email.0['#title'] }}</a>
     </div>
-    <div class="field field--name-field-contact-email field--type-email field--label-hidden field__items">
-      <div class="field__item">
-        <svg class="usa-icon" aria-hidden="true"><!-- Include Email SVG here --></svg>
-        <a href="mailto:{{ content.group_contact_us.field_contact_email.0['#title'] }}">{{ content.group_contact_us.field_contact_email.0['#title'] }}</a>
-      </div>
-    </div>
-    <div class="field field--name-field-telephone field--type-telephone field--label-hidden field__items">
-      <div class="field__item">
-        <svg class="usa-icon" aria-hidden="true"><!-- Include Phone SVG here --></svg>
-        <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img" focusable="false">
-          <use xlink:href="/assets/img/sprite.svg#people"></use>
-        </svg>
-        <a href="tel:{{ content.group_contact_us.field_telephone.0['#title'] }}">{{ content.group_contact_us.field_telephone.0['#title'] }}</a>
-      </div>
+    <div class="contact-phone">
+      <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+        <use xlink:href="/themes/custom/gsa_beta/assets/img/sprite.svg#phone"></use>
+      </svg>
+      <a href="tel:{{ content.group_contact_us.field_telephone.0['#title'] }}">{{ content.group_contact_us.field_telephone.0['#title'] }}</a>
     </div>
   </div>
 </div>

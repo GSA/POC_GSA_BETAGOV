@@ -1,0 +1,51 @@
+/*  Scratch page for rough dev */
+
+
+.contact-us {
+  background-color: #f9f9f9; /* Light grey background */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.contact-us h3 {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.contact-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-email, .contact-phone {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+}
+
+.contact-email a, .contact-phone a {
+  color: #0056b3; /* Blue link color */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.contact-email a:hover, .contact-phone a:hover {
+  text-decoration: underline;
+}
+
+.usa-icon {
+  width: 24px;
+  height: 24px;
+  fill: #0056b3; /* Match the icon color to the links for consistency */
+}
