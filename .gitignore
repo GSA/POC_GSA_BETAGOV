@@ -9,3 +9,5 @@ web/sites/default/files/*
 .DS_Store
 /web/themes/custom/gsa_beta/node_modules
 .idea/*
+/web/sites/default/settings.php
+/.idea/*
