@@ -1,0 +1,62 @@
+name: Github build
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'staging'
+      - 'dev'
+  pull_request:
+    types:
+      - closed
+    branches:
+      - 'main'
+      - 'staging'
+      - 'dev'
+
+concurrency:
+  group: gsa-theme-build
+  cancel-in-progress: true
+
+jobs:
+  build_css:
+    # Runner Name
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source Git branch
+        uses: actions/checkout@v4
+        with:
+          repository: GSA/POC-GSA-BETAGOV
+
+      # Node Setup
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '20'
+
+      # Workflow branch
+      - name: Create new artifact branch
+        run:
+          git checkout -b WORKFLOW/$GITHUB_REF_NAME
+
+      # Setup working directory and begin the jobs
+      - name: GSA - Install and run gulp
+        working-directory: '/home/runner/work/POC-GSA-BETAGOV/POC-GSA-BETAGOV/web/themes/custom/gsa_beta'
+        run:
+          npm install;
+          echo "Done! Compile and delete gitignore for deployment process";
+          npx gulp compileSass;
+          rm -f .gitignore;
+
+      - name: Git setup for new commit
+        run:
+          git config --local user.email 'action@github.com';
+          git config --local user.name 'GitHub Action';
+          git add -A;
+          git commit -am "GSA Theme compiled - $GITHUB_SHA";
+
+      - name: Push changes
+        run:
+          git push origin WORKFLOW/$GITHUB_REF_NAME -f
+
