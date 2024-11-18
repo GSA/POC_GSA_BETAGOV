@@ -27,7 +27,7 @@ jobs:
       - name: Checkout source Git branch
         uses: actions/checkout@v4
         with:
-          repository: GSA/POC-GSA-BETAGOV
+          repository: GSA/POC_GSA_BETAGOV
 
       # Node Setup
       - name: Setup Node.js environment
@@ -42,7 +42,7 @@ jobs:
 
       # Setup working directory and begin the jobs
       - name: GSA - Install and run gulp
-        working-directory: '/home/runner/work/POC-GSA-BETAGOV/POC-GSA-BETAGOV/web/themes/custom/gsa_beta'
+        working-directory: '/home/runner/work/POC_GSA_BETAGOV/POC_GSA_BETAGOV/web/themes/custom/gsa_beta'
         run:
           npm install;
           echo "Done! Compile and delete gitignore for deployment process";
