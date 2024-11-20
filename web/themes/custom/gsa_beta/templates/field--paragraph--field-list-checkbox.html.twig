@@ -1,0 +1,13 @@
+
+
+<div class="checkbox-status">
+  {% if items.0.content['#markup'] == '✖' %}
+    <span class="unchecked" aria-label="Not Checked">○</span>
+  {% endif %}
+  {% if element['#items'].value == 1 %}
+    <span class="checked" aria-label="Checked">✔ as 1</span>
+  {% endif %}
+  {% if element['#items'].value == '✔' %}
+    <span class="checked" aria-label="Checked">✔ checked as mark</span>
+  {% endif %}
+</div>

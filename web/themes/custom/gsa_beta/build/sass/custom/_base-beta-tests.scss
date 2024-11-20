@@ -49,3 +49,70 @@
   height: 24px;
   fill: #000000; /* Match the icon color to the links for consistency */
 }
+
+.paragraph--type--bold-text-leader-list {
+  background-color: #f9f9f9;
+  background-color: orange;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+
+}
+
+//field field--name-field-list-title field--type-string field--label-hidden field__item
+/*
+<!-- FILE NAME SUGGESTIONS:
+   ▪️ field--paragraph--field-bold-text-leader--bolded-text-leader-list-items.html.twig
+   ▪️ field--paragraph--field-bold-text-leader.html.twig
+   ▪️ field--paragraph--bolded-text-leader-list-items.html.twig
+   ▪️ field--field-bold-text-leader.html.twig
+   ▪️ field--string.html.twig
+   ✅ field.html.twig
+-->
+
+ */
+
+
+.paragraph--type--bold-text-leader-list .field--name-field-list-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration-color: yellow;
+}
+
+.field-bold-text-leader,
+.field-plain-text-following-line {
+  display: inline-block; /* Ensure fields are inline */
+  margin-right: 5px; /* Spacing between the colon and the next field */
+  text-decoration-color: red;
+}
+
+.field--name-field-list-title {
+  font-weight: bold; /* Make the list title bold */
+}
+
+
+.field-bold-text-leader {
+  // font-weight: bold; /* Make the leader text bold */
+  display: flex;
+}
+
+.checkbox-status span.unchecked {
+  color: red; /* Example styling for unchecked */
+  font-size: 16px; /* Adjust size as needed */
+  display: flex;
+}
+
+.checkbox-status span.checked {
+  color: green; /* Example styling for checked */
+  font-size: 16px; /* Adjust size as needed */
+  display: flex;
+}
+
+.paragraph--type--stylized-checkbox-items {
+  display: flex;
+}
+
+.field--name-field-checkbox-items, .field__item{
+  display: flex;
+}

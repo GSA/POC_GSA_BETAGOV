@@ -1,0 +1,8 @@
+{# Accessing the value 'Findbold' from the structured array #}
+<div class="field-bold-text-leader">
+  {% if items.0.content['#context'].value %}
+    {{ items.0.content['#context'].value }}22
+  {% else %}
+    {{ 'No content found' }}
+  {% endif %}
+</div>
