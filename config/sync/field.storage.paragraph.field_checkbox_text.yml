@@ -1,11 +1,11 @@
-uuid: ab726a91-abbf-43dd-b779-8986d97f1474
+uuid: c8b08d9a-d9b5-4050-bbb3-771e6a83c994
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_list_test
-field_name: field_list_test
+id: paragraph.field_checkbox_text
+field_name: field_checkbox_text
 entity_type: paragraph
 type: string
 settings:

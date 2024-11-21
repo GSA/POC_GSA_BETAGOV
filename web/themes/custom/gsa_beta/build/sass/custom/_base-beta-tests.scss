@@ -1,5 +1,10 @@
 /*  Scratch page for rough dev */
 
+/* Styling to support svg */
+
+.logo-img img{
+  width: 3.5rem;
+}
 
 .contact-us {
   background-color: #f9f9f9; /* Light grey background */
@@ -92,10 +97,6 @@
 }
 
 
-.field-bold-text-leader {
-  // font-weight: bold; /* Make the leader text bold */
-  display: flex;
-}
 
 .checkbox-status span.unchecked {
   color: red; /* Example styling for unchecked */
@@ -109,14 +110,34 @@
   display: flex;
 }
 
-.paragraph--type--stylized-checkbox-items {
+
+
+/* Working on single line dislpays */
+
+/* Ensures the checkbox containers are laid out horizontally */
+.checkbox-container {
   display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  margin-bottom: 10px; /* Adds space between each checkbox container */
 }
 
-.field--name-field-checkbox-items, .field__item{
-  display: flex;
+/* Ensures the checkbox icon and text are on the same line */
+.checkbox-status, .field-checkbox-text {
+  display: inline-block;
+  margin-right: 10px; /* Adds spacing between the checkbox and text */
 }
 
-.logo-img{
-  width: 3.5rem
+/* Optional: Enhance the appearance of titles and their items */
+.field--name-field-checkbox-list-title .title,
+.field--name-field-checkbox-list-title .field__item {
+  display: inline-block; /* Ensures title components are inline */
+  margin-right: 5px; /* Space between title and its item */
+}
+
+/* Adjust the layout to not break on small screens */
+@media (max-width: 600px) {
+  .checkbox-container {
+    flex-direction: column; /* Stacks checkbox and text vertically on small screens */
+    align-items: flex-start; /* Aligns items to the left */
+  }
 }

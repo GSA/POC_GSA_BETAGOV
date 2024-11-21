@@ -1,15 +1,15 @@
-uuid: e9b262e0-eabc-42b2-8c9d-c231c7041715
+uuid: 17c41687-0c07-4c0d-b5ec-2855da3f3745
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_list_test
+    - field.storage.paragraph.field_checkbox_text
     - paragraphs.paragraphs_type.stylized_checkbox_items
-id: paragraph.stylized_checkbox_items.field_list_test
-field_name: field_list_test
+id: paragraph.stylized_checkbox_items.field_checkbox_text
+field_name: field_checkbox_text
 entity_type: paragraph
 bundle: stylized_checkbox_items
-label: 'List Text'
+label: 'Checkbox text'
 description: ''
 required: true
 translatable: false

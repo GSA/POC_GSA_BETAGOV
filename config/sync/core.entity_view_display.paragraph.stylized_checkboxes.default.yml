@@ -24,7 +24,7 @@ content:
     region: content
   field_checkbox_list_title:
     type: string
-    label: inline
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

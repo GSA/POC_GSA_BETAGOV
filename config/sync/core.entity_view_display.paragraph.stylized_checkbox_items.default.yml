@@ -3,14 +3,47 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.stylized_checkbox_items.field_checkbox_text
     - field.field.paragraph.stylized_checkbox_items.field_list_checkbox
-    - field.field.paragraph.stylized_checkbox_items.field_list_test
     - paragraphs.paragraphs_type.stylized_checkbox_items
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_checkbox_container:
+      children:
+        - field_list_checkbox
+        - field_checkbox_text
+      label: checkbox-container
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: checkbox-container
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: paragraph.stylized_checkbox_items.default
 targetEntityType: paragraph
 bundle: stylized_checkbox_items
 mode: default
 content:
+  field_checkbox_text:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_list_checkbox:
     type: boolean
     label: hidden
@@ -18,14 +51,6 @@ content:
       format: unicode-yes-no
       format_custom_false: ''
       format_custom_true: ''
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_list_test:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
     third_party_settings: {  }
     weight: 1
     region: content
