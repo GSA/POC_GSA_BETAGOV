@@ -6,6 +6,31 @@ dependencies:
     - field.field.paragraph.bolded_text_leader_list_items.field_bold_text_leader
     - field.field.paragraph.bolded_text_leader_list_items.field_plain_text_following_line
     - paragraphs.paragraphs_type.bolded_text_leader_list_items
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_bold_text_list_container:
+      children:
+        - field_bold_text_leader
+        - field_plain_text_following_line
+      label: 'Bold text list container'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: bold-text-container
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: paragraph.bolded_text_leader_list_items.default
 targetEntityType: paragraph
 bundle: bolded_text_leader_list_items
@@ -17,7 +42,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_plain_text_following_line:
     type: string
@@ -25,6 +50,6 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
 hidden: {  }

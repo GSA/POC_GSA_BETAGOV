@@ -20,7 +20,7 @@
 @forward 'usa-checklist';
 @forward 'usa-collection';
 //@forward 'usa-footer';
-//@forward 'usa-header';
+@forward 'usa-header';
 @forward 'usa-hero';
 @forward 'usa-icon-list';
 @forward 'usa-icon';
@@ -46,24 +46,39 @@
 //@forward 'usa-table';
 @forward 'usa-tag';
 @forward 'usa-tooltip';
-// @import 'packages/uswds-components';
 
+//@import 'packages/uswds-components';
+
+@import 'uswds-utilities';
 /*
 
 @import 'uswds-utilities';
 // -------------------------------------
 // ...or import the complete USWDS kit
-//@import "uswds";
-// Lets not overwrite uswds and instead copy and edit directly.
-@import "uswds-theme-gsa-color";
+*/
+
+@import "uswds";
+
+
 @import "extends/mixins";
+@import "uswds-theme-gsa-color";
+
+/*
+// Lets not overwrite uswds and instead copy and edit directly.
+
+
+
 @import "extends/header";
+
 @import "extends/navigation";
 @import "extends/footer";
 @import "extends/table";
 @import "extends/table_extends";
 // -------------------------------------
 // Import theme custom styles
+
+// Custom globals messes up the theme too much, need a lot of review.
+
 @import "custom/globals";
 @import "custom/directives";
 @import "custom/left-nav";
@@ -73,12 +88,18 @@
 @import "custom/megamenu_base";
 @import "custom/region-footer";
 @import "custom/backtotop";
+*/
 @import "custom/breadcrumb";
+@import "custom/region-content";
+/*
 @import "custom/region-content";
 @import "custom/contextual-tabs-template";
 @import "custom/page-banners";
 @import "custom/infoblocks";
+*/
 @import "custom/gsa-mixins";
+
+/*
 .region.region-content {
   @import "custom/tables";
 }
@@ -86,13 +107,17 @@
 @import "custom/views_slideshow";
 @import "custom/events";
 @import "custom/sitemap";
+*/
 @import "custom/size-mixins";
 @import "custom/image-sizes";
+/*
 @import "custom/in-page-nav";
 @import "custom/newsreleases";
 @import "custom/event-detail";
 @import "custom/topic_page_footer";
+*/
 @import "custom/theme-icons";
+/*
 @import "custom/template-featured-microsite";
 @import "custom/content-iframe-sizing";
 @import "custom/insite-search";

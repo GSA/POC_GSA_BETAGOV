@@ -1,10 +1,14 @@
 /*  Scratch page for rough dev */
+/* Todo: Switch sizes to variables */
+
 
 /* Styling to support svg */
 
 .logo-img img{
   width: 3.5rem;
+
 }
+
 
 .contact-us {
   background-color: #f9f9f9; /* Light grey background */
@@ -16,7 +20,8 @@
 }
 
 .contact-us h3 {
-  font-size: 24px;
+  font-size: 2rem;
+  font-weight: bold;
   color: #000;
   margin-bottom: 15px;
 }
@@ -56,33 +61,19 @@
 }
 
 .paragraph--type--bold-text-leader-list {
-  background-color: #f9f9f9;
-  background-color: orange;
-  border: 1px solid #ccc;
-  padding: 20px;
+
+ /* padding: 20px; */
   margin-bottom: 20px;
 
 }
 
-//field field--name-field-list-title field--type-string field--label-hidden field__item
-/*
-<!-- FILE NAME SUGGESTIONS:
-   ▪️ field--paragraph--field-bold-text-leader--bolded-text-leader-list-items.html.twig
-   ▪️ field--paragraph--field-bold-text-leader.html.twig
-   ▪️ field--paragraph--bolded-text-leader-list-items.html.twig
-   ▪️ field--field-bold-text-leader.html.twig
-   ▪️ field--string.html.twig
-   ✅ field.html.twig
--->
-
- */
 
 
 .paragraph--type--bold-text-leader-list .field--name-field-list-title {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 550;
   margin-bottom: 10px;
-  text-decoration-color: yellow;
+  /* background-color: yellow;*/
 }
 
 .field-bold-text-leader,
@@ -92,22 +83,96 @@
   text-decoration-color: red;
 }
 
-.field--name-field-list-title {
-  font-weight: bold; /* Make the list title bold */
+.field-bold-text-leader {
+  font-weight: bold;
 }
 
+/* Add bullet decoration to the field-bold-text-leader field. */
+
+.bold-text-container .field-bold-text-leader::before {
+  content: '• '; /* Bullet symbol as the content */
+  font-size: 15px; /* Adjust size as necessary */
+  color: #333; /* Color of the bullet */
+  color: #007BFF;
+  padding-right: 8px; /* Space between the bullet and the text */
+}
+
+.bold-text-container .field-bold-text-leader::before {
+  font-size: 15px; /* Adjust size as necessary */
+  color: #333;
+}
+
+/* Style adjustments for the container and text */
+.bold-text-container {
+  margin-left: 8px; /* Adds space on the left side of the container */
+}
+
+.field-bold-text-leader,
+.field-plain-text-following-line {
+  padding: 4px 0; /* Adds vertical padding for better spacing */
+}
+
+
+/*  */
+
+.field--name-field-how-to-buy-form-this-contr{
+  font-size: 2rem;
+  font-weight: bold !important;
+  color: #000;
+}
+
+
+/* baseline bold list theme */
+
+.field--name-field-list-title {
+  font-size: 2rem;
+  font-weight: bold;
+  /* background-color:pink; */
+}
+
+.field--name-field-how-to-buy-form-this-contr .title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  /* background-color:aqua; */
+}
+
+
+.field--name-field-contract-vehicle-name .title {
+  font-size: 2rem;
+  font-weight: bold !important;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  /* background-color:green; */
+}
 
 
 .checkbox-status span.unchecked {
   color: red; /* Example styling for unchecked */
   font-size: 16px; /* Adjust size as needed */
   display: flex;
+
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  position: relative;
+  width: 1em;
+
 }
 
 .checkbox-status span.checked {
   color: green; /* Example styling for checked */
   font-size: 16px; /* Adjust size as needed */
   display: flex;
+
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  position: relative;
+  width: 1em;
+
+
 }
 
 
@@ -125,6 +190,8 @@
 .checkbox-status, .field-checkbox-text {
   display: inline-block;
   margin-right: 10px; /* Adds spacing between the checkbox and text */
+  min-width: 20px; /* Width breaks flow */
+
 }
 
 /* Optional: Enhance the appearance of titles and their items */
@@ -132,6 +199,32 @@
 .field--name-field-checkbox-list-title .field__item {
   display: inline-block; /* Ensures title components are inline */
   margin-right: 5px; /* Space between title and its item */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.field--name-field-checkbox-list-title {
+  /* background-color: pink; */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*
+.field--type-entity-reference-revisions .title{
+  font-size: 2rem;
+  font-weight: bold !important;
+  background-color: brown;
+}
+
+*/
+
+.field--name-field-text-field-entry {
+  font-size: 2.5rem;
+  font-weight: 550;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  /* background-color: red; */
 }
 
 /* Adjust the layout to not break on small screens */
@@ -139,5 +232,79 @@
   .checkbox-container {
     flex-direction: column; /* Stacks checkbox and text vertically on small screens */
     align-items: flex-start; /* Aligns items to the left */
+  }
+}
+
+.align-right {
+  padding-left: 15px;
+}
+
+.align-left {
+  padding-right: 15px;
+}
+
+@media (max-width: 600px) {
+  .align-left {
+    padding-right: 10px;
+  }
+}
+
+.usa-logo__text a{
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+}
+
+/*
+@media (max-width: 600px) {
+  .usa-header--extended .usa-logo {
+    font-size: 2.13rem;
+    margin: 2rem 0 1.5rem;
+    max-width: 56%;
+  }
+  .usa-logo__text {
+    display: none;
+  }
+}
+*/
+@media (max-width: 900px) {
+  .usa-header--extended .usa-logo {
+    font-size: 2.13rem;
+    margin: 2rem 0 1.5rem;
+   /* max-width: 56%; */
+  }
+}
+
+@media (max-width: 1282px) {
+  .usa-logo__text a{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
+  }
+}
+
+@media (max-width: 1067px) {
+  .usa-logo__text a{
+    font-size: .85rem;
+    font-weight: 600;
+    color: #000;
+  }
+}
+@media (max-width: 1025px) {
+  .usa-logo__text a{
+    font-size: .85rem;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .logo-img img{
+    width: 2.5rem;
+  }
+
+}
+
+@media (max-width: 708px) {
+  .usa-logo__text a:nth-of-type(2) {
+    display: none;
   }
 }
