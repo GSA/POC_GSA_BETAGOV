@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.contract_landing_page_paragraph.field_contact_us
     - field.field.paragraph.contract_landing_page_paragraph.field_contract_basics
     - field.field.paragraph.contract_landing_page_paragraph.field_contract_overview
+    - field.field.paragraph.contract_landing_page_paragraph.field_contract_vehicle_name
     - field.field.paragraph.contract_landing_page_paragraph.field_how_to_buy_form_this_contr
     - field.field.paragraph.contract_landing_page_paragraph.field_is_this_contract_right_for
     - field.field.paragraph.contract_landing_page_paragraph.field_product_services_categorie
@@ -19,7 +20,7 @@ mode: default
 content:
   field_contact_us:
     type: entity_reference_autocomplete
-    weight: -194
+    weight: 7
     region: content
     settings:
       match_operator: CONTAINS
@@ -29,7 +30,7 @@ content:
     third_party_settings: {  }
   field_contract_basics:
     type: paragraphs
-    weight: -198
+    weight: 3
     region: content
     settings:
       title: Paragraph
@@ -47,7 +48,25 @@ content:
     third_party_settings: {  }
   field_contract_overview:
     type: paragraphs
-    weight: -199
+    weight: 2
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_contract_vehicle_name:
+    type: paragraphs
+    weight: 1
     region: content
     settings:
       title: Paragraph
@@ -65,7 +84,7 @@ content:
     third_party_settings: {  }
   field_how_to_buy_form_this_contr:
     type: paragraphs
-    weight: -195
+    weight: 6
     region: content
     settings:
       title: Paragraph
@@ -83,7 +102,7 @@ content:
     third_party_settings: {  }
   field_is_this_contract_right_for:
     type: paragraphs
-    weight: -197
+    weight: 4
     region: content
     settings:
       title: Paragraph
@@ -101,7 +120,7 @@ content:
     third_party_settings: {  }
   field_product_services_categorie:
     type: paragraphs
-    weight: -196
+    weight: 5
     region: content
     settings:
       title: Paragraph
@@ -118,7 +137,7 @@ content:
         duplicate: duplicate
     third_party_settings: {  }
   layout_paragraphs_fields:
-    weight: -200
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }

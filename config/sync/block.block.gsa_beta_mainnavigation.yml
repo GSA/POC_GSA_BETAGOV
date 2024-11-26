@@ -1,6 +1,6 @@
 uuid: 77557923-8f54-4f80-96f4-c2b7c313830a
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main
@@ -20,9 +20,9 @@ settings:
   label: 'Main navigation'
   label_display: '0'
   provider: system
-  level: 1
-  depth: 1
-  expand_all_items: true
+  level: 2
+  depth: 2
+  expand_all_items: false
 visibility:
   request_path:
     id: request_path
@@ -34,6 +34,8 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
+      contract_landing_page: contract_landing_page
       article: article
+      landing_page: landing_page
       news_release: news_release
       page: page

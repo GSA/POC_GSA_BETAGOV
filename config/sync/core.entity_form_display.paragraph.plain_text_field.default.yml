@@ -1,0 +1,24 @@
+uuid: 1ceabe7f-f18c-47b4-a9c2-41f672fb0801
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.plain_text_field.field_text_field_entry
+    - paragraphs.paragraphs_type.plain_text_field
+id: paragraph.plain_text_field.default
+targetEntityType: paragraph
+bundle: plain_text_field
+mode: default
+content:
+  field_text_field_entry:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  layout_paragraphs_fields: true
+  status: true

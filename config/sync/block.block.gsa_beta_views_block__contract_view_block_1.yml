@@ -13,7 +13,7 @@ dependencies:
 id: gsa_beta_views_block__contract_view_block_1
 theme: gsa_beta
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: 'views_block:contract_view-block_1'
 settings:

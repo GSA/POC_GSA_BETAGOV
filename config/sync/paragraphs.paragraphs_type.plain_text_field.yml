@@ -1,0 +1,20 @@
+uuid: 340c4b36-6634-492d-bde5-32d3b60ade9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: plain_text_field
+label: 'Plain text field'
+icon_uuid: null
+icon_default: null
+description: 'Allow the entry of simple text, without a wysiwyg'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      layout_onecol: 'One column'

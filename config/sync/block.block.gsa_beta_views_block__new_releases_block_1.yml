@@ -12,7 +12,7 @@ dependencies:
 id: gsa_beta_views_block__new_releases_block_1
 theme: gsa_beta
 region: content
-weight: -1
+weight: -2
 provider: null
 plugin: 'views_block:new_releases-block_1'
 settings:
