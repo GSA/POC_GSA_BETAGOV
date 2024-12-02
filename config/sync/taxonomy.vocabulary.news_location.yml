@@ -1,0 +1,9 @@
+uuid: 73e6d59c-4e14-4097-97de-eaff9eb53761
+langcode: en
+status: true
+dependencies: {  }
+name: 'News location'
+vid: news_location
+description: 'Contains locations for the News content type'
+weight: 0
+new_revision: false
