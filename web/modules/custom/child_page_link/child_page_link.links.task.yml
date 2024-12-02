@@ -1,0 +1,5 @@
+child_page_link.add_child_page:
+  title: 'Add Child Page'
+  route_name: 'child_page_link.add_child'
+  base_route: 'entity.node.canonical'
+  weight: 10

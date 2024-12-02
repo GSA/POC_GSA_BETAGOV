@@ -1,0 +1,11 @@
+child_page_link.admin_settings:
+  title: 'Child Page Link Settings'
+  description: 'Configure which content types can have child pages.'
+  parent: system.admin_config_content
+  route_name: child_page_link.settings
+  weight: 100
+child_page_link.add_child_tab:
+  route_name: child_page_link.add_child
+  base_route: entity.node.canonical
+  title: 'Add Child'
+  weight: 100

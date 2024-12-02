@@ -1,0 +1,36 @@
+<?php
+
+use Drupal\node\NodeInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Link;
+use Drupal\Core\Url;
+use Drupal\node\Entity\NodeType;
+
+/**
+ * Implements hook_node_view().
+ */
+function child_page_link_node_view(array &$build, NodeInterface $node, EntityViewDisplayInterface $display, $view_mode) {
+  $config = \Drupal::config('child_page_link.settings');
+  $types = $config->get('types');
+  $node_type = NodeType::load($node->bundle());
+
+  if (!empty($types[$node->bundle()]['enabled']) && !empty($types[$node->bundle()]['siblings'])) {
+    $links = [];
+    foreach ($types[$node->bundle()]['siblings'] as $sibling) {
+      if (!empty($types[$sibling]['enabled'])) {
+        $url = Url::fromRoute('node.add', ['node_type' => $sibling]);
+        $sibling_type = NodeType::load($sibling);
+        $link_text = t('Add @type', ['@type' => $sibling_type ? $sibling_type->label() : $sibling]);
+        $links[] = Link::fromTextAndUrl($link_text, $url);
+      }
+    }
+
+    if (!empty($links)) {
+      $build['child_page_link'] = [
+        '#theme' => 'item_list',
+        '#items' => $links,
+        '#title' => t('Add child page'),
+      ];
+    }
+  }
+}

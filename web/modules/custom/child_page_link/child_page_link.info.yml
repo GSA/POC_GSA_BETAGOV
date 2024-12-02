@@ -1,0 +1,8 @@
+name: Child Page Link
+type: module
+description: 'Provides a dropdown link to add child pages of configurable content types.'
+package: Custom
+core_version_requirement: ^10
+dependencies:
+  - drupal:node
+  - drupal:block

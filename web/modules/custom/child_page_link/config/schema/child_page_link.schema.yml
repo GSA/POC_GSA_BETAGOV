@@ -1,0 +1,18 @@
+child_page_link.settings:
+  type: config_object
+  label: 'Child Page Link settings'
+  mapping:
+    types:
+      type: sequence
+      label: 'Content type settings'
+      sequence:
+        type: mapping
+        mapping:
+          enabled:
+            type: boolean
+            label: 'Enabled'
+          siblings:
+            type: sequence
+            label: 'Sibling content types'
+            sequence:
+              type: string

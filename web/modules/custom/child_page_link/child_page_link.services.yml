@@ -1,0 +1,7 @@
+services:
+  child_page_link.settings_form:
+    class: Drupal\child_page_link\Form\ChildPageLinkSettingsForm
+    arguments: ['@config.factory']
+  child_page_link.dropdown_block:
+    class: Drupal\child_page_link\Plugin\Block\ChildPageLinkBlock
+    arguments: ['@entity_type.manager', '@config.factory']
