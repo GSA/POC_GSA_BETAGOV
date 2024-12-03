@@ -8,11 +8,11 @@ third_party_settings:
   menu_ui:
     available_menus:
       - main
-    parent: 'main:menu_link_content:cdb7da4a-e5f7-45e6-8c50-b4f23778d8b5'
+    parent: 'main:'
 name: 'News Release'
 type: news_release
 description: 'Content type with restricted features.  This is for use with releases.'
 help: null
 new_revision: true
 preview_mode: 1
-display_submitted: false
+display_submitted: true

@@ -1,0 +1,20 @@
+uuid: de9cc21a-25cc-426a-997a-a5adb50ac557
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_news_location
+field_name: field_news_location
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

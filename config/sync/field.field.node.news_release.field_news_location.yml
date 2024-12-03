@@ -1,0 +1,29 @@
+uuid: 248719fd-7c05-4df2-a082-c76f8b5d5d79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_location
+    - node.type.news_release
+    - taxonomy.vocabulary.news_location
+id: node.news_release.field_news_location
+field_name: field_news_location
+entity_type: node
+bundle: news_release
+label: 'News Location'
+description: 'Selected location is prepended to the text of the page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      news_location: news_location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

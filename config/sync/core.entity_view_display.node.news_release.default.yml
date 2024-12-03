@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.news_release.body
     - field.field.node.news_release.field_contact_us
     - field.field.node.news_release.field_navigation_title
+    - field.field.node.news_release.field_news_location
     - field.field.node.news_release.field_subtitle
     - node.type.news_release
   module:
@@ -30,12 +31,12 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 4
     region: content
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: -20
+    weight: 0
     region: content
   field_contact_us:
     type: entity_reference_entity_view
@@ -43,6 +44,15 @@ content:
     settings:
       view_mode: full
       link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_news_location:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
     third_party_settings: {  }
     weight: 3
     region: content
@@ -52,12 +62,12 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   smart_title:
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
 hidden:
   field_navigation_title: true

@@ -1,0 +1,29 @@
+_core:
+  default_config_hash: ybFcPjZje3mJVpuKZAJmoX9OXSZmM0NWrppkk8gaToo
+types:
+  article:
+    enabled: true
+    siblings:
+      article: article
+      contract: contract
+  contract:
+    enabled: true
+    siblings:
+      contract: contract
+      contract_landing_page: contract_landing_page
+  contract_landing_page:
+    enabled: true
+    siblings:
+      contract_landing_page: contract_landing_page
+  landing_page:
+    enabled: false
+    siblings: {  }
+  news_release:
+    enabled: true
+    siblings:
+      news_release: news_release
+  page:
+    enabled: false
+    siblings:
+      article: article
+      contract_landing_page: contract_landing_page

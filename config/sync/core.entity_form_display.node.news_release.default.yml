@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.news_release.body
     - field.field.node.news_release.field_contact_us
     - field.field.node.news_release.field_navigation_title
+    - field.field.node.news_release.field_news_location
     - field.field.node.news_release.field_subtitle
     - node.type.news_release
     - workflows.workflow.editorial
@@ -21,6 +22,7 @@ third_party_settings:
         - title
         - field_subtitle
         - field_navigation_title
+        - field_news_location
         - field_contact_us
       label: 'Titles and Navigation'
       region: content
@@ -58,7 +60,7 @@ content:
     third_party_settings: {  }
   field_contact_us:
     type: options_buttons
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -69,6 +71,12 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_news_location:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_subtitle:
     type: string_textfield
