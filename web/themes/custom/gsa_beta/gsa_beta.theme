@@ -67,4 +67,30 @@ function gsa_beta_preprocess_paragraph(&$variables) {
   // Output the collected field data to your Twig template
   $variables['debug_info'] = json_encode($variables['debug_fields_info']);
 }
+function gsa_beta_preprocess_node(&$variables) {
+  if ($variables['node']->getType() == 'news_release') {
+    $node = $variables['node'];
 
+    // Prepends location string to the first <p> of the body field
+    if ($node->hasField('field_news_location') && !$node->get('field_news_location')->isEmpty()) {
+      $term = $node->get('field_news_location')->entity;
+      $term_name = $term->label();
+      $clean_name = preg_replace('/\s+\(\d+\)$/', '', $term_name);
+      $location_string = '<span class="news-location-tag">' . $clean_name . ' — ' . '</span>';
+
+      if ($node->hasField('body') && !$node->get('body')->isEmpty()) {
+        $original_body_value = $node->get('body')->value;
+        $original_body_value = preg_replace('/<p[^>]*>/', '$0' . $location_string, $original_body_value, 1);
+        $variables['content']['body'][0]['#text'] = $original_body_value;
+      }
+    }
+
+    // Load the GSA Social Links Block directly using the plugin manager
+    $block_manager = \Drupal::service('plugin.manager.block');
+    $config = []; // Configuration array, if any configurations are needed.
+    $plugin_block = $block_manager->createInstance('gsa_social_links_block', $config);
+    if ($plugin_block) {
+      $variables['gsa_social_links_block'] = $plugin_block->build(); // Correctly use the build method directly
+    }
+  }
+}

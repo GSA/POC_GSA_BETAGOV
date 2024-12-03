@@ -1,0 +1,29 @@
+{% if node.isPublished() %}
+  <div class="node-meta">
+    <div class="news-content-wrap">
+      <div class="publish-date">
+        {{ node.created.value|date('F j, Y') }}
+      </div>
+      {% if gsa_social_links_block %}
+        <div class="gsa-social-links">
+          {{ gsa_social_links_block }}
+        </div>
+      {% endif %}
+
+    </div>
+
+    {# Display the node title #}
+    <h1 class="news-node-title">{{ label }}</h1>
+    {# Display the subtitle if available. Access it through the group if needed #}
+    {% if content.group_area_below_title.field_subtitle %}
+      <div class="subtitle">{{ content.group_area_below_title.field_subtitle }}</div>
+    {% endif %}
+  </div>
+
+  <hr/>
+  <div class="node-body">
+    {{ content.body }}
+  </div>
+{% else %}
+  <div>{{ 'This content is unpublished'|t }}</div>
+{% endif %}

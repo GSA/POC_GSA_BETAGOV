@@ -1,0 +1,3 @@
+administer gsa social integration:
+  title: 'Administer GSA Social Integration settings'
+  description: 'Allow users to manage GSA Social Integration block settings.'

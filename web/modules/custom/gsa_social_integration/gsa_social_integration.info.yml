@@ -1,0 +1,6 @@
+name: 'GSA Social Integration'
+type: module
+description: 'Provides a block to display GSA social media links.'
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom
+

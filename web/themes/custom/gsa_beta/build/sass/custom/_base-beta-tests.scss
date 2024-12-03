@@ -149,9 +149,8 @@
 
 
 .checkbox-status span.unchecked {
-  color: red; /* Example styling for unchecked */
-  font-size: 16px; /* Adjust size as needed */
-  display: flex;
+  color: red;
+  font-size: 16px;
 
   display: inline-block;
   fill: currentColor;
@@ -162,17 +161,13 @@
 }
 
 .checkbox-status span.checked {
-  color: green; /* Example styling for checked */
-  font-size: 16px; /* Adjust size as needed */
-  display: flex;
-
+  color: green;
+  font-size: 16px;
   display: inline-block;
   fill: currentColor;
   height: 1em;
   position: relative;
   width: 1em;
-
-
 }
 
 
@@ -255,6 +250,10 @@
   color: #000;
 }
 
+.news-location-tag {
+  font-weight: bold;
+}
+
 /*
 @media (max-width: 600px) {
   .usa-header--extended .usa-logo {
@@ -307,4 +306,119 @@
   .usa-logo__text a:nth-of-type(2) {
     display: none;
   }
+}
+
+
+/* Social icons - migrate. */
+
+.usa-social-link {
+  background-color: white;
+  height: 2rem;
+  width: 2rem;
+}
+
+.publish-date {
+  vertical-align: top;
+  min-width: 50%;
+  display: inline-block;
+}
+
+.gsa-social-links {
+  margin-right: 0;
+  display: inline-block;
+  min-width: 49%;
+  text-align: end;
+}
+
+.news-node-title {
+  width: 100%;
+  color: #005ea2;
+}
+
+.gsa-stay-connected-container {
+  display: inline-block;
+
+}
+.gsa-stay-connected-list {
+  text-decoration: none;
+  list-style-type: none !important;
+  display: ruby;
+  vertical-align: top;
+
+}
+
+.node-meta {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.node-body {
+  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+
+.news-content-wrap {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.usa-social-link--facebook:before {
+  content: ""; /* Important for clearing the content */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../../dist/img/usa-icons/facebook.svg") no-repeat center center;
+  background-size: cover; /* Ensures the image covers the pseudo-element */
+}
+
+/* Social icons - migrate. */
+.usa-social-link--twitter:before {
+  content: ""; /* Important for clearing the content */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../../dist/img/usa-icons/twitter.svg") no-repeat center center;
+  background-size: cover; /* Ensures the image covers the pseudo-element */
+}
+
+/* Social icons - migrate. */
+.usa-social-link--linkedin:before {
+  content: ""; /* Important for clearing the content */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../../dist/img/usa-icons/linkedin.svg") no-repeat center center;
+  background-size: cover; /* Ensures the image covers the pseudo-element */
+}
+
+/* Social icons - migrate. */
+.usa-social-link--instagram:before {
+  content: ""; /* Important for clearing the content */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../../dist/img/usa-icons/instagram.svg") no-repeat center center;
+  background-size: cover; /* Ensures the image covers the pseudo-element */
+}
+
+
+/* Social icons - migrate. */
+.usa-social-link--youtube:before {
+  content: ""; /* Important for clearing the content */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../../dist/img/usa-icons/youtube.svg") no-repeat center center;
+  background-size: cover; /* Ensures the image covers the pseudo-element */
+}
+
+/* Social icons - migrate. */
+.usa-social-link--email:before {
+  content: ""; /* Important for clearing the content */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../../dist/img/usa-icons/mail.svg") no-repeat center center;
+  background-size: cover; /* Ensures the image covers the pseudo-element */
 }

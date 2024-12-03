@@ -1,0 +1,13 @@
+gsa_social_style:
+  version: 1.x
+  css:
+    theme:
+      css/gsa_social_integration.css: {}
+
+gsa_social_script:
+  version: 1.x
+  js:
+    js/gsa_social_integration.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
