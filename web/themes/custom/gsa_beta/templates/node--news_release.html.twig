@@ -24,6 +24,10 @@
   <div class="node-body">
     {{ content.body }}
   </div>
+  {% if content.field_contact_us %}
+      {{ content.field_contact_us }}
+  {% endif %}
 {% else %}
   <div>{{ 'This content is unpublished'|t }}</div>
 {% endif %}
+
