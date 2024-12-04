@@ -8,29 +8,25 @@ use Drupal\node\Entity\NodeType;
 
 /**
  * Implements hook_node_view().
+ *
+ * Adds custom links to the node view for adding child pages.
  */
 function child_page_link_node_view(array &$build, NodeInterface $node, EntityViewDisplayInterface $display, $view_mode) {
-  $config = \Drupal::config('child_page_link.settings');
-  $types = $config->get('types');
-  $node_type = NodeType::load($node->bundle());
+  $config = \Drupal::config('child_page_link.settings')->get('types');
+  $node_type = $node->bundle();
 
-  if (!empty($types[$node->bundle()]['enabled']) && !empty($types[$node->bundle()]['siblings'])) {
+  // Check if the node type is enabled and if it has siblings configured
+  if (!empty($config[$node_type]['enabled']) && !empty($config[$node_type]['siblings'])) {
     $links = [];
-    foreach ($types[$node->bundle()]['siblings'] as $sibling) {
-      if (!empty($types[$sibling]['enabled'])) {
+    foreach ($config[$node_type]['siblings'] as $sibling) {
+      // Ensure sibling type is also enabled
+      if (!empty($config[$sibling]['enabled'])) {
         $url = Url::fromRoute('node.add', ['node_type' => $sibling]);
         $sibling_type = NodeType::load($sibling);
         $link_text = t('Add @type', ['@type' => $sibling_type ? $sibling_type->label() : $sibling]);
-        $links[] = Link::fromTextAndUrl($link_text, $url);
+        $links[] = Link::fromTextAndUrl($link_text, $url)->toString();
       }
-    }
-
-    if (!empty($links)) {
-      $build['child_page_link'] = [
-        '#theme' => 'item_list',
-        '#items' => $links,
-        '#title' => t('Add child page'),
-      ];
     }
   }
 }
+
