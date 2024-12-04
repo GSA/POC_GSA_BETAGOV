@@ -8,39 +8,82 @@ dependencies:
     - block_content.type.custom_news_release_title
     - filter.format.news
     - filter.format.uswds_paragraphs
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - taxonomy.vocabulary.gsa_contact_associations
+    - taxonomy.vocabulary.news_location
   module:
     - block_content
     - contextual
     - embedded_content
     - entity_reference_revisions
+    - file
     - filter
     - image
     - layout_paragraphs_permissions
+    - media
+    - system
+    - taxonomy
+    - toolbar
+    - views_ui
+    - workflows
 id: site_editor
 label: 'Site Structure Editor'
 weight: -4
 is_admin: null
 permissions:
+  - 'access administration pages'
   - 'access block library'
   - 'access contextual links'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'access user profiles'
   - 'administer block content'
   - 'administer block types'
   - 'administer image styles'
+  - 'administer media'
+  - 'administer media types'
+  - 'administer menu'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer themes'
+  - 'administer users'
+  - 'administer views'
+  - 'administer workflows'
   - 'create alter_bkcol block content'
   - 'create basic block content'
   - 'create custom_news_release_title block content'
+  - 'create media'
+  - 'create terms in gsa_contact_associations'
+  - 'create terms in news_location'
+  - 'delete all taxonomy revisions'
   - 'delete any alter_bkcol block content'
   - 'delete any alter_bkcol block content revisions'
   - 'delete any basic block content'
   - 'delete any basic block content revisions'
   - 'delete any custom_news_release_title block content'
   - 'delete any custom_news_release_title block content revisions'
+  - 'delete media'
   - 'delete orphan revisions'
+  - 'delete own files'
   - 'duplicate layout paragraphs components'
   - 'edit any alter_bkcol block content'
+  - 'edit any audio media'
   - 'edit any basic block content'
   - 'edit any custom_news_release_title block content'
+  - 'edit any document media'
+  - 'edit any image media'
+  - 'edit any remote_video media'
+  - 'edit any video media'
   - 'edit layout paragraphs plugin config'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own remote_video media'
+  - 'edit own video media'
   - 'reorder layout paragraphs components'
   - 'revert any alter_bkcol block content revisions'
   - 'revert any basic block content revisions'
@@ -49,5 +92,10 @@ permissions:
   - 'use text format news'
   - 'use text format uswds_paragraphs'
   - 'view any alter_bkcol block content history'
+  - 'view any audio media revisions'
   - 'view any basic block content history'
   - 'view any custom_news_release_title block content history'
+  - 'view any document media revisions'
+  - 'view any image media revisions'
+  - 'view any remote_video media revisions'
+  - 'view any video media revisions'

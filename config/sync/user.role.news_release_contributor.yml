@@ -5,23 +5,63 @@ dependencies:
   config:
     - filter.format.news
     - filter.format.uswds_paragraphs
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
     - node.type.news_release
+    - node.type.page
     - workflows.workflow.editorial
   module:
     - content_moderation
     - contextual
     - embedded_content
+    - file
     - filter
+    - media
     - node
+    - toolbar
 id: news_release_contributor
 label: 'News Release Contributor'
 weight: -6
 is_admin: null
 permissions:
   - 'access contextual links'
+  - 'access toolbar'
+  - 'create audio media'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
   - 'create news_release content'
+  - 'create page content'
+  - 'create remote_video media'
+  - 'create video media'
+  - 'delete any document media'
+  - 'delete any remote_video media'
+  - 'delete media'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own files'
+  - 'delete own image media'
+  - 'delete own news_release content'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'edit any audio media'
+  - 'edit any news_release content'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own news_release content'
+  - 'edit own remote_video media'
+  - 'edit own video media'
+  - 'update media'
   - 'use default embedded content button'
   - 'use editorial transition create_new_draft'
   - 'use text format news'
   - 'use text format uswds_paragraphs'
+  - 'view all media revisions'
   - 'view latest version'
+  - 'view news_release revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
