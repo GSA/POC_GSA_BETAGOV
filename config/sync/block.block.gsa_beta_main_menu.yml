@@ -33,6 +33,8 @@ visibility:
       node: '@node.node_route_context:node'
     bundles:
       article: article
+      contract: contract
+      contract_landing_page: contract_landing_page
       landing_page: landing_page
       news_release: news_release
       page: page
